@@ -31,6 +31,7 @@ precision_per_class_over_rounds = []
 recall_per_class_over_rounds = []
 f1_per_class_over_rounds = []
 round_numbers = []
+client_accuracies = []
 
 @app.route('/init', methods=['GET'])
 def init_model():
@@ -46,7 +47,8 @@ def update_weights():
     print("Client training starts...")
 
     client_weights = [list_to_weights(w) for w in request.json['weights']]
-    q_all_list_node = data_distribution.find_q_updated()
+    client_accuracies.append(request.json['client_accuracy'])
+    q_all_list_node = data_distribution.find_q_updated(client_accuracies, current_round)
     avg_weights = AveragingModels.model_average_q1(client_weights, q_all_list_node)
     
     global_weights = avg_weights
@@ -79,11 +81,11 @@ if __name__ == "__main__":
     print("---")
     app.run(port=5000)
     
-    np.save("accuracy_per_class_over_rounds.npy", np.array(accuracy_per_class_over_rounds))
-    np.save("precision_per_class_over_rounds.npy", np.array(precision_per_class_over_rounds))
-    np.save("recall_per_class_over_rounds.npy", np.array(recall_per_class_over_rounds))
-    np.save("f1_per_class_over_rounds.npy", np.array(f1_per_class_over_rounds))
-    np.save("round_numbers.npy", np.array(round_numbers))
+    np.save("./npy results/accuracy_per_class_over_rounds.npy", np.array(accuracy_per_class_over_rounds))
+    np.save("./npy results/precision_per_class_over_rounds.npy", np.array(precision_per_class_over_rounds))
+    np.save("./npy results/recall_per_class_over_rounds.npy", np.array(recall_per_class_over_rounds))
+    np.save("./npy results/f1_per_class_over_rounds.npy", np.array(f1_per_class_over_rounds))
+    np.save("./npy results/round_numbers.npy", np.array(round_numbers))
 
     cur_dir_path = os.getcwd()
     # plotter1(cur_dir_path)

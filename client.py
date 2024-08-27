@@ -42,13 +42,13 @@ if __name__ == "__main__":
     if use_parallel:
         print("Training with parallelization")
         training_accuracy, loss_list = train_server_with_parallelization(rounds, clients, global_weights, 'http://127.0.0.1:5000')
-        np.save('accuracy_cicids_fedq_parallel', np.array(training_accuracy))
-        np.save('loss_cicids_fedq_parallel', np.array(loss_list))
+        np.save('./accuracy/accuracy_cicids_fedq_parallel.npy', np.array(training_accuracy))
+        np.save('./loss & weights/loss_cicids_fedq_parallel.npy', np.array(loss_list))
     else:
         print("Training without parallelization")
         training_accuracy, loss_list = train_server_without_parallelization(rounds, clients, global_weights, 'http://127.0.0.1:5000')
-        np.save('accuracy_cicids_fedq', np.array(training_accuracy))
-        np.save('loss_cicids_fedq', np.array(loss_list))
+        np.save('./accuracy/accuracy_cicids_fedq.npy', np.array(training_accuracy))
+        np.save('./loss & weights/loss_cicids_fedq.npy', np.array(loss_list))
 
     end_time = time.time()
     print('TOTAL TIME ELAPSED = ', end_time - start_time)
@@ -56,5 +56,5 @@ if __name__ == "__main__":
     # Plotting the loss
     from src.plotting import plot_loss
     loss_fed_avg = np.load('./loss & weights/loss_cicids_fedavg.npy')
-    loss1 = np.load('loss_cicids_fedq_parallel.npy') if use_parallel else np.load('loss_cicids_fedq.npy')
+    loss1 = np.load('./loss & weights/loss_cicids_fedq_parallel.npy') if use_parallel else np.load('./loss & weights/loss_cicids_fedq.npy')
     plot_loss(rounds, loss1, loss_fed_avg, use_parallel)

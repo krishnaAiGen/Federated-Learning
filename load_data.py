@@ -178,7 +178,7 @@ def load_cicids_2017_new(is_iid=False, is_weighted = False, inverse = False):
         # load_cicids_2017_non_iid(is_weighted, inverse)
         return load_cicids_2017_non_iid(is_weighted, inverse)
 
-def load_cicids_2017_non_iid(is_weighted=False, inverse = False):
+def load_cicids_2017_non_iid(is_weighted=False, inverse = False, alpha = 0.5, beta = 0.5):
     # Load the data using load_cicids_2017
     X_combined, X_valid, y_combined, y_valid = load_cicids_2017()
     
@@ -235,6 +235,7 @@ def load_cicids_2017_non_iid(is_weighted=False, inverse = False):
         
         # Calculate coefficient weights for each client
         coefficient_weights = [total_samples / count for count in client_sample_counts]
+        # coefficient_weights = [alpha*(count / total_samples) + beta*(total_samples / count) for count in client_sample_counts]
 
         total_coeff = sum(coefficient_weights)
 

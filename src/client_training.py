@@ -54,6 +54,7 @@ def train_server_without_parallelization(rounds, clients, global_weights, server
 def train_server_with_parallelization(rounds, clients, global_weights, server_url):
     training_accuracy = []
     loss_list = []
+    client_accuracies = []
 
     def client_training(client, global_weights):
         return client.train(global_weights)
@@ -61,16 +62,17 @@ def train_server_with_parallelization(rounds, clients, global_weights, server_ur
     for round in range(1, rounds + 1):
         print(f"Training round {round}")
         client_weights = []
-
+        
         with ThreadPoolExecutor() as executor:
             futures = [executor.submit(client_training, client, global_weights) for client in clients]
             for future in futures:
                 weights, loss, accuracy = future.result()
                 client_weights.append(weights)
+                client_accuracies.append(accuracy)
                 print(f"Client training result: ############################# 100% accuracy = {accuracy}, loss = {loss}")
 
         client_weights_list = [[w.tolist() for w in client] for client in client_weights]
-        response = requests.post(f'{server_url}/update_weights', json={'weights': client_weights_list})
+        response = requests.post(f'{server_url}/update_weights', json={'weights': client_weights_list, 'client_accuracy': client_accuracies})
         updated_global = response.json()
         global_weights = [np.array(w) for w in updated_global['weights']]
         print(f"Performing federated averaging. Round = {updated_global['round']}, Accuracy = {updated_global['accuracy']}, Loss = {updated_global['loss']}")

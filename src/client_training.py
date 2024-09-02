@@ -25,6 +25,7 @@ class Client:
 def train_server_without_parallelization(rounds, clients, global_weights, server_url):
     training_accuracy = []
     loss_list = []
+    client_accuracy_list = []
 
     for round in range(1, rounds + 1):
         print(f"Training round {round}")
@@ -35,13 +36,15 @@ def train_server_without_parallelization(rounds, clients, global_weights, server
             with tqdm(total=100, desc=f"Client {i+1} training", bar_format="{l_bar}{bar}| {n_fmt}/{total_fmt} {postfix}", ascii=True) as pbar:
                 weights, loss, accuracy = client.train(global_weights)
                 client_weights.append(weights)
+                client_accuracy_list.append(accuracy)
 
                 # Update the progress bar (assuming each training is 100% done after each loop iteration)
                 pbar.update(100)
                 pbar.set_postfix_str(f"accuracy = {accuracy:.4f}, loss = {loss:.4f}")
 
         client_weights_list = [[w.tolist() for w in client] for client in client_weights]
-        response = requests.post(f'{server_url}/update_weights', json={'weights': client_weights_list})
+        # print("\n\n client weight list", client_weights_list[2][0])
+        response = requests.post(f'{server_url}/update_weights', json={'weights': client_weights_list, 'client_accuracy': client_accuracy_list})
         updated_global = response.json()
         global_weights = [np.array(w) for w in updated_global['weights']]
         print(f"Performing federated averaging. Round = {updated_global['round']}, Accuracy = {updated_global['accuracy']}, Loss = {updated_global['loss']}")
@@ -81,3 +84,5 @@ def train_server_with_parallelization(rounds, clients, global_weights, server_ur
         loss_list.append(updated_global['loss'])
 
     return training_accuracy, loss_list
+
+

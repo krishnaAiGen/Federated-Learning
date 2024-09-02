@@ -213,8 +213,8 @@ def load_cicids_2017_non_iid(is_weighted=False, inverse = False, alpha = 0.5, be
         dataset_joined = dataset_joined.sample(frac=1, random_state=42)  # Shuffle the data
 
         # Append to the training lists
-        y_train_list.append(dataset_joined['Label'])
-        X_train_list.append(dataset_joined.drop(['Label'], axis=1))
+        # y_train_list.append(dataset_joined['Label'])
+        # X_train_list.append(dataset_joined.drop(['Label'], axis=1))
 
         X_train = dataset_joined.drop(columns=['Label']).to_numpy()
         y_train = dataset_joined['Label'].to_numpy()

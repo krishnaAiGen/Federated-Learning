@@ -49,12 +49,17 @@ def update_weights():
     client_weights = [list_to_weights(w) for w in request.json['weights']]
     client_accuracies.append(request.json['client_accuracy'])
     q_all_list_node = data_distribution.find_q_updated(client_accuracies, current_round)
+    # print("\n\n q_all list node", q_all_list_node)
     avg_weights = AveragingModels.model_average_q1(client_weights, q_all_list_node)
+    eval_weights = AveragingModels.model_average_q0(client_weights)
+
     
     global_weights = avg_weights
     
     # Evaluate model
-    loss, accuracy, accuracy_per_class, precision_per_class, recall_per_class, f1_per_class = evaluate_global_model(global_model, global_weights, X_valid, y_valid)
+    # loss, accuracy, accuracy_per_class, precision_per_class, recall_per_class, f1_per_class = evaluate_global_model(global_model, global_weights, X_valid, y_valid)
+    loss, accuracy, accuracy_per_class, precision_per_class, recall_per_class, f1_per_class = evaluate_global_model(global_model, eval_weights, X_valid, y_valid)
+    print("accuracy per class is ", accuracy_per_class)
     
     accuracy_per_class_over_rounds.append(accuracy_per_class)
     precision_per_class_over_rounds.append(precision_per_class)

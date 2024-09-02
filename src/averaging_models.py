@@ -27,7 +27,9 @@ class AveragingModels:
         for index1 in range(len(client_weights[0])):
             layer_weights = [client_weights[index2][index1] for index2 in range(len(client_weights))]
             # Apply coefficient weights for weighted averaging
+            # print('\n\n initial layers weigths', layer_weights[0][0])
             layer_weights_weighted = [layer_weights[index3] * coefficient_weights[index3] for index3 in range(len(coefficient_weights))]
+            # print('\n\n weighted layers weigths', layer_weights_weighted[0][0])
             average_weight = np.sum(np.array(layer_weights_weighted), axis=0)
             average_weight_list.append(average_weight)
         

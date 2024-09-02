@@ -113,6 +113,9 @@ def plotter3(dir_path, valid_dist):
     # Convert to numpy array for easier plotting
     avg_weighted_accuracies = np.array(avg_weighted_accuracies)
 
+    output_dir = "metrics_plots"
+    os.makedirs(output_dir, exist_ok=True)
+
     # Plot the average weighted accuracies over rounds
     plt.figure(figsize=(10, 6))
     plt.plot(range(1, len(avg_weighted_accuracies) + 1), avg_weighted_accuracies, marker='o')
@@ -120,4 +123,9 @@ def plotter3(dir_path, valid_dist):
     plt.ylabel('Average Weighted Accuracy')
     plt.title('Average Weighted Accuracy Over Communication Rounds')
     plt.grid(True)
+
+    # Save the figure
+    output_path = os.path.join(output_dir, f'overall_accuracy.png')
+    plt.savefig(output_path)
+
     plt.show()

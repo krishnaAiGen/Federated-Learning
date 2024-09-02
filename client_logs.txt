@@ -1,0 +1,1600 @@
+Round: 1
+Client 1 accuracy = 0.9884, loss = 0.0371
+Client 2 accuracy = 0.9824, loss = 0.0440
+Client 3 accuracy = 0.9926, loss = 0.0281
+Client 4 accuracy = 0.9868, loss = 0.0599
+Client 5 accuracy = 0.9889, loss = 0.0460
+Client 6 accuracy = 0.9802, loss = 0.0665
+Client 7 accuracy = 0.9898, loss = 0.0426
+Client 8 accuracy = 0.9335, loss = 0.2338
+Client 9 accuracy = 0.9686, loss = 0.1018
+Client 10 accuracy = 0.9204, loss = 0.2854
+Client 11 accuracy = 0.8746, loss = 0.5177
+Client 12 accuracy = 0.1406, loss = 2.5473
+Client 13 accuracy = 0.0833, loss = 2.4611
+Client 14 accuracy = 0.5000, loss = 1.7653
+
+Round: 2
+Client 1 accuracy = 0.9864, loss = 0.0377
+Client 2 accuracy = 0.9821, loss = 0.0450
+Client 3 accuracy = 0.9914, loss = 0.0290
+Client 4 accuracy = 0.9872, loss = 0.0596
+Client 5 accuracy = 0.9901, loss = 0.0446
+Client 6 accuracy = 0.9819, loss = 0.0631
+Client 7 accuracy = 0.9904, loss = 0.0420
+Client 8 accuracy = 0.9380, loss = 0.2165
+Client 9 accuracy = 0.9717, loss = 0.0970
+Client 10 accuracy = 0.9270, loss = 0.2570
+Client 11 accuracy = 0.8865, loss = 0.4685
+Client 12 accuracy = 0.3281, loss = 2.2783
+Client 13 accuracy = 0.3611, loss = 2.1779
+Client 14 accuracy = 0.7778, loss = 1.2625
+
+Round: 3
+Client 1 accuracy = 0.9891, loss = 0.0362
+Client 2 accuracy = 0.9819, loss = 0.0468
+Client 3 accuracy = 0.9903, loss = 0.0315
+Client 4 accuracy = 0.9855, loss = 0.0622
+Client 5 accuracy = 0.9901, loss = 0.0455
+Client 6 accuracy = 0.9759, loss = 0.0742
+Client 7 accuracy = 0.9889, loss = 0.0466
+Client 8 accuracy = 0.9342, loss = 0.2270
+Client 9 accuracy = 0.9682, loss = 0.1048
+Client 10 accuracy = 0.9218, loss = 0.2702
+Client 11 accuracy = 0.8882, loss = 0.4662
+Client 12 accuracy = 0.6562, loss = 2.1460
+Client 13 accuracy = 0.5833, loss = 2.1091
+Client 14 accuracy = 0.9444, loss = 1.1414
+
+Round: 4
+Client 1 accuracy = 0.9895, loss = 0.0380
+Client 2 accuracy = 0.9828, loss = 0.0469
+Client 3 accuracy = 0.9892, loss = 0.0381
+Client 4 accuracy = 0.9867, loss = 0.0618
+Client 5 accuracy = 0.9866, loss = 0.0630
+Client 6 accuracy = 0.9646, loss = 0.1003
+Client 7 accuracy = 0.9803, loss = 0.0606
+Client 8 accuracy = 0.9274, loss = 0.2711
+Client 9 accuracy = 0.9646, loss = 0.1287
+Client 10 accuracy = 0.9210, loss = 0.2780
+Client 11 accuracy = 0.8592, loss = 0.5445
+Client 12 accuracy = 0.7656, loss = 2.2497
+Client 13 accuracy = 0.5833, loss = 2.2715
+Client 14 accuracy = 1.0000, loss = 1.3700
+
+Round: 5
+Client 1 accuracy = 0.9872, loss = 0.0433
+Client 2 accuracy = 0.9816, loss = 0.0497
+Client 3 accuracy = 0.9859, loss = 0.0454
+Client 4 accuracy = 0.9854, loss = 0.0657
+Client 5 accuracy = 0.9868, loss = 0.0635
+Client 6 accuracy = 0.9617, loss = 0.1248
+Client 7 accuracy = 0.9815, loss = 0.0662
+Client 8 accuracy = 0.9172, loss = 0.3023
+Client 9 accuracy = 0.9603, loss = 0.1450
+Client 10 accuracy = 0.9173, loss = 0.2853
+Client 11 accuracy = 0.8413, loss = 0.6738
+Client 12 accuracy = 0.8125, loss = 2.3979
+Client 13 accuracy = 0.5833, loss = 2.4270
+Client 14 accuracy = 1.0000, loss = 1.7100
+
+Round: 6
+Client 1 accuracy = 0.9849, loss = 0.0546
+Client 2 accuracy = 0.9812, loss = 0.0513
+Client 3 accuracy = 0.9863, loss = 0.0472
+Client 4 accuracy = 0.9844, loss = 0.0699
+Client 5 accuracy = 0.9858, loss = 0.0669
+Client 6 accuracy = 0.9565, loss = 0.1378
+Client 7 accuracy = 0.9697, loss = 0.1079
+Client 8 accuracy = 0.9119, loss = 0.3276
+Client 9 accuracy = 0.9512, loss = 0.1886
+Client 10 accuracy = 0.8913, loss = 0.3958
+Client 11 accuracy = 0.8029, loss = 0.7885
+Client 12 accuracy = 0.8281, loss = 2.5081
+Client 13 accuracy = 0.4722, loss = 2.5249
+Client 14 accuracy = 1.0000, loss = 2.0091
+
+Round: 7
+Client 1 accuracy = 0.9868, loss = 0.0490
+Client 2 accuracy = 0.9824, loss = 0.0505
+Client 3 accuracy = 0.9853, loss = 0.0520
+Client 4 accuracy = 0.9847, loss = 0.0699
+Client 5 accuracy = 0.9811, loss = 0.0920
+Client 6 accuracy = 0.9565, loss = 0.1399
+Client 7 accuracy = 0.9609, loss = 0.1505
+Client 8 accuracy = 0.9078, loss = 0.3698
+Client 9 accuracy = 0.9361, loss = 0.2463
+Client 10 accuracy = 0.8645, loss = 0.4571
+Client 11 accuracy = 0.7491, loss = 0.9192
+Client 12 accuracy = 0.8281, loss = 2.5767
+Client 13 accuracy = 0.4722, loss = 2.5814
+Client 14 accuracy = 1.0000, loss = 2.2237
+
+Round: 8
+Client 1 accuracy = 0.9869, loss = 0.0539
+Client 2 accuracy = 0.9810, loss = 0.0687
+Client 3 accuracy = 0.9854, loss = 0.0580
+Client 4 accuracy = 0.9843, loss = 0.0728
+Client 5 accuracy = 0.9811, loss = 0.0898
+Client 6 accuracy = 0.9539, loss = 0.1518
+Client 7 accuracy = 0.9628, loss = 0.1374
+Client 8 accuracy = 0.8802, loss = 0.4590
+Client 9 accuracy = 0.8428, loss = 0.4686
+Client 10 accuracy = 0.7048, loss = 0.7658
+Client 11 accuracy = 0.5973, loss = 1.0416
+Client 12 accuracy = 0.7500, loss = 2.6164
+Client 13 accuracy = 0.4722, loss = 2.6132
+Client 14 accuracy = 1.0000, loss = 2.3616
+
+Round: 9
+Client 1 accuracy = 0.9872, loss = 0.0549
+Client 2 accuracy = 0.9807, loss = 0.0951
+Client 3 accuracy = 0.9837, loss = 0.0934
+Client 4 accuracy = 0.9834, loss = 0.0764
+Client 5 accuracy = 0.9815, loss = 0.0977
+Client 6 accuracy = 0.9513, loss = 0.1592
+Client 7 accuracy = 0.9620, loss = 0.1684
+Client 8 accuracy = 0.8099, loss = 0.7093
+Client 9 accuracy = 0.8207, loss = 0.5680
+Client 10 accuracy = 0.7162, loss = 0.7989
+Client 11 accuracy = 0.6169, loss = 1.1013
+Client 12 accuracy = 0.7344, loss = 2.6397
+Client 13 accuracy = 0.5000, loss = 2.6319
+Client 14 accuracy = 1.0000, loss = 2.4483
+
+Round: 10
+Client 1 accuracy = 0.9880, loss = 0.0653
+Client 2 accuracy = 0.9817, loss = 0.1230
+Client 3 accuracy = 0.9809, loss = 0.1452
+Client 4 accuracy = 0.9822, loss = 0.0833
+Client 5 accuracy = 0.8935, loss = 0.3752
+Client 6 accuracy = 0.9507, loss = 0.1572
+Client 7 accuracy = 0.9618, loss = 0.1681
+Client 8 accuracy = 0.5026, loss = 0.9207
+Client 9 accuracy = 0.7855, loss = 0.6608
+Client 10 accuracy = 0.5080, loss = 0.8723
+Client 11 accuracy = 0.4770, loss = 1.1492
+Client 12 accuracy = 0.5469, loss = 2.6536
+Client 13 accuracy = 0.5000, loss = 2.6439
+Client 14 accuracy = 1.0000, loss = 2.5048
+
+Round: 11
+Client 1 accuracy = 0.9874, loss = 0.1084
+Client 2 accuracy = 0.9819, loss = 0.1207
+Client 3 accuracy = 0.9833, loss = 0.1871
+Client 4 accuracy = 0.9237, loss = 0.2137
+Client 5 accuracy = 0.8542, loss = 0.4508
+Client 6 accuracy = 0.9485, loss = 0.1720
+Client 7 accuracy = 0.9583, loss = 0.1694
+Client 8 accuracy = 0.5079, loss = 0.9266
+Client 9 accuracy = 0.7910, loss = 0.6643
+Client 10 accuracy = 0.5083, loss = 0.8393
+Client 11 accuracy = 0.4352, loss = 1.1744
+Client 12 accuracy = 0.5000, loss = 2.6613
+Client 13 accuracy = 0.5000, loss = 2.6512
+Client 14 accuracy = 1.0000, loss = 2.5402
+
+Round: 12
+Client 1 accuracy = 0.9874, loss = 0.1218
+Client 2 accuracy = 0.9830, loss = 0.1430
+Client 3 accuracy = 0.9826, loss = 0.2054
+Client 4 accuracy = 0.9309, loss = 0.1987
+Client 5 accuracy = 0.8139, loss = 0.5324
+Client 6 accuracy = 0.9427, loss = 0.2093
+Client 7 accuracy = 0.9522, loss = 0.2042
+Client 8 accuracy = 0.4822, loss = 0.9344
+Client 9 accuracy = 0.5887, loss = 0.7938
+Client 10 accuracy = 0.5120, loss = 0.8501
+Client 11 accuracy = 0.4522, loss = 1.1831
+Client 12 accuracy = 0.5000, loss = 2.6654
+Client 13 accuracy = 0.5000, loss = 2.6557
+Client 14 accuracy = 1.0000, loss = 2.5629
+
+Round: 13
+Client 1 accuracy = 0.9884, loss = 0.1128
+Client 2 accuracy = 0.9830, loss = 0.1775
+Client 3 accuracy = 0.9834, loss = 0.1782
+Client 4 accuracy = 0.8693, loss = 0.3347
+Client 5 accuracy = 0.8093, loss = 0.5933
+Client 6 accuracy = 0.8755, loss = 0.4111
+Client 7 accuracy = 0.8772, loss = 0.3957
+Client 8 accuracy = 0.5011, loss = 0.9207
+Client 9 accuracy = 0.5242, loss = 0.8370
+Client 10 accuracy = 0.5051, loss = 0.8521
+Client 11 accuracy = 0.4582, loss = 1.1931
+Client 12 accuracy = 0.5000, loss = 2.6675
+Client 13 accuracy = 0.5000, loss = 2.6582
+Client 14 accuracy = 1.0000, loss = 2.5781
+
+Round: 14
+Client 1 accuracy = 0.9882, loss = 0.1209
+Client 2 accuracy = 0.9819, loss = 0.1568
+Client 3 accuracy = 0.9813, loss = 0.2000
+Client 4 accuracy = 0.8558, loss = 0.3589
+Client 5 accuracy = 0.7480, loss = 0.6393
+Client 6 accuracy = 0.8573, loss = 0.4752
+Client 7 accuracy = 0.7974, loss = 0.5461
+Client 8 accuracy = 0.5053, loss = 0.8708
+Client 9 accuracy = 0.5412, loss = 0.7938
+Client 10 accuracy = 0.5054, loss = 0.8728
+Client 11 accuracy = 0.4727, loss = 1.1903
+Client 12 accuracy = 0.5000, loss = 2.6683
+Client 13 accuracy = 0.5000, loss = 2.6594
+Client 14 accuracy = 1.0000, loss = 2.5868
+
+Round: 15
+Client 1 accuracy = 0.9866, loss = 0.1302
+Client 2 accuracy = 0.9803, loss = 0.1776
+Client 3 accuracy = 0.9842, loss = 0.1865
+Client 4 accuracy = 0.8534, loss = 0.4001
+Client 5 accuracy = 0.6645, loss = 0.7221
+Client 6 accuracy = 0.7671, loss = 0.5614
+Client 7 accuracy = 0.7522, loss = 0.6146
+Client 8 accuracy = 0.5000, loss = 0.9117
+Client 9 accuracy = 0.5269, loss = 0.8117
+Client 10 accuracy = 0.4932, loss = 0.8296
+Client 11 accuracy = 0.4770, loss = 1.1746
+Client 12 accuracy = 0.5000, loss = 2.6678
+Client 13 accuracy = 0.5000, loss = 2.6590
+Client 14 accuracy = 1.0000, loss = 2.5876
+
+Round: 16
+Client 1 accuracy = 0.9868, loss = 0.1305
+Client 2 accuracy = 0.9819, loss = 0.1706
+Client 3 accuracy = 0.9801, loss = 0.2243
+Client 4 accuracy = 0.8201, loss = 0.4825
+Client 5 accuracy = 0.6379, loss = 0.7151
+Client 6 accuracy = 0.6649, loss = 0.6827
+Client 7 accuracy = 0.6461, loss = 0.6883
+Client 8 accuracy = 0.4872, loss = 0.9259
+Client 9 accuracy = 0.5054, loss = 0.7417
+Client 10 accuracy = 0.5029, loss = 0.8510
+Client 11 accuracy = 0.4548, loss = 1.1798
+Client 12 accuracy = 0.5000, loss = 2.6666
+Client 13 accuracy = 0.5000, loss = 2.6576
+Client 14 accuracy = 1.0000, loss = 2.5818
+
+Round: 17
+Client 1 accuracy = 0.9878, loss = 0.1228
+Client 2 accuracy = 0.9822, loss = 0.1640
+Client 3 accuracy = 0.9782, loss = 0.2519
+Client 4 accuracy = 0.8187, loss = 0.4881
+Client 5 accuracy = 0.6180, loss = 0.6969
+Client 6 accuracy = 0.5660, loss = 0.7088
+Client 7 accuracy = 0.6231, loss = 0.6882
+Client 8 accuracy = 0.5011, loss = 0.9283
+Client 9 accuracy = 0.4981, loss = 0.8375
+Client 10 accuracy = 0.4954, loss = 0.8105
+Client 11 accuracy = 0.4582, loss = 1.1932
+Client 12 accuracy = 0.5000, loss = 2.6651
+Client 13 accuracy = 0.5000, loss = 2.6558
+Client 14 accuracy = 1.0000, loss = 2.5731
+
+Round: 18
+Client 1 accuracy = 0.9881, loss = 0.1236
+Client 2 accuracy = 0.9817, loss = 0.1589
+Client 3 accuracy = 0.9787, loss = 0.2509
+Client 4 accuracy = 0.8105, loss = 0.5084
+Client 5 accuracy = 0.5847, loss = 0.7046
+Client 6 accuracy = 0.5875, loss = 0.6994
+Client 7 accuracy = 0.6181, loss = 0.6950
+Client 8 accuracy = 0.5008, loss = 0.9309
+Client 9 accuracy = 0.4931, loss = 0.8625
+Client 10 accuracy = 0.5040, loss = 0.8900
+Client 11 accuracy = 0.4539, loss = 1.1988
+Client 12 accuracy = 0.5000, loss = 2.6607
+Client 13 accuracy = 0.5000, loss = 2.6536
+Client 14 accuracy = 1.0000, loss = 2.5635
+
+Round: 19
+Client 1 accuracy = 0.9887, loss = 0.1210
+Client 2 accuracy = 0.9822, loss = 0.1690
+Client 3 accuracy = 0.9839, loss = 0.1848
+Client 4 accuracy = 0.7708, loss = 0.5525
+Client 5 accuracy = 0.5425, loss = 0.7374
+Client 6 accuracy = 0.5067, loss = 0.7048
+Client 7 accuracy = 0.5610, loss = 0.7078
+Client 8 accuracy = 0.5008, loss = 0.9015
+Client 9 accuracy = 0.4964, loss = 0.8059
+Client 10 accuracy = 0.4994, loss = 0.7860
+Client 11 accuracy = 0.4710, loss = 1.1829
+Client 12 accuracy = 0.5000, loss = 2.6584
+Client 13 accuracy = 0.5000, loss = 2.6518
+Client 14 accuracy = 1.0000, loss = 2.5547
+
+Round: 20
+Client 1 accuracy = 0.9888, loss = 0.1227
+Client 2 accuracy = 0.9827, loss = 0.1637
+Client 3 accuracy = 0.9829, loss = 0.1917
+Client 4 accuracy = 0.7797, loss = 0.5777
+Client 5 accuracy = 0.5981, loss = 0.7062
+Client 6 accuracy = 0.5036, loss = 0.7096
+Client 7 accuracy = 0.4930, loss = 0.7068
+Client 8 accuracy = 0.4917, loss = 0.9408
+Client 9 accuracy = 0.4822, loss = 0.8065
+Client 10 accuracy = 0.4969, loss = 0.8762
+Client 11 accuracy = 0.4573, loss = 1.1900
+Client 12 accuracy = 0.5000, loss = 2.6568
+Client 13 accuracy = 0.5000, loss = 2.6504
+Client 14 accuracy = 1.0000, loss = 2.5476
+
+Round: 21
+Client 1 accuracy = 0.9868, loss = 0.1341
+Client 2 accuracy = 0.9834, loss = 0.1642
+Client 3 accuracy = 0.9821, loss = 0.1977
+Client 4 accuracy = 0.7594, loss = 0.5595
+Client 5 accuracy = 0.5073, loss = 0.7210
+Client 6 accuracy = 0.4907, loss = 0.7103
+Client 7 accuracy = 0.5114, loss = 0.7070
+Client 8 accuracy = 0.4966, loss = 0.9303
+Client 9 accuracy = 0.4917, loss = 0.8134
+Client 10 accuracy = 0.4989, loss = 0.8492
+Client 11 accuracy = 0.4582, loss = 1.1879
+Client 12 accuracy = 0.5000, loss = 2.6554
+Client 13 accuracy = 0.5000, loss = 2.6493
+Client 14 accuracy = 1.0000, loss = 2.5413
+
+Round: 22
+Client 1 accuracy = 0.9881, loss = 0.1178
+Client 2 accuracy = 0.9828, loss = 0.1631
+Client 3 accuracy = 0.9836, loss = 0.2009
+Client 4 accuracy = 0.6576, loss = 0.6629
+Client 5 accuracy = 0.5211, loss = 0.7109
+Client 6 accuracy = 0.5019, loss = 0.7242
+Client 7 accuracy = 0.5183, loss = 0.7139
+Client 8 accuracy = 0.5000, loss = 0.9360
+Client 9 accuracy = 0.5035, loss = 0.7896
+Client 10 accuracy = 0.5017, loss = 0.8445
+Client 11 accuracy = 0.4565, loss = 1.2077
+Client 12 accuracy = 0.5000, loss = 2.6543
+Client 13 accuracy = 0.5000, loss = 2.6484
+Client 14 accuracy = 1.0000, loss = 2.5366
+
+Round: 23
+Client 1 accuracy = 0.9878, loss = 0.1336
+Client 2 accuracy = 0.9816, loss = 0.1571
+Client 3 accuracy = 0.9823, loss = 0.1837
+Client 4 accuracy = 0.6712, loss = 0.6513
+Client 5 accuracy = 0.5158, loss = 0.7537
+Client 6 accuracy = 0.5028, loss = 0.7130
+Client 7 accuracy = 0.5029, loss = 0.7053
+Client 8 accuracy = 0.4955, loss = 0.9332
+Client 9 accuracy = 0.4943, loss = 0.8010
+Client 10 accuracy = 0.4980, loss = 0.8615
+Client 11 accuracy = 0.4548, loss = 1.2117
+Client 12 accuracy = 0.5000, loss = 2.6533
+Client 13 accuracy = 0.5000, loss = 2.6478
+Client 14 accuracy = 1.0000, loss = 2.5324
+
+Round: 24
+Client 1 accuracy = 0.9869, loss = 0.1327
+Client 2 accuracy = 0.9808, loss = 0.1591
+Client 3 accuracy = 0.9822, loss = 0.2097
+Client 4 accuracy = 0.7222, loss = 0.6075
+Client 5 accuracy = 0.5004, loss = 0.7363
+Client 6 accuracy = 0.4988, loss = 0.7074
+Client 7 accuracy = 0.5036, loss = 0.7066
+Client 8 accuracy = 0.5015, loss = 0.9317
+Client 9 accuracy = 0.4993, loss = 0.8082
+Client 10 accuracy = 0.4989, loss = 0.8531
+Client 11 accuracy = 0.4386, loss = 1.2029
+Client 12 accuracy = 0.5000, loss = 2.6522
+Client 13 accuracy = 0.5000, loss = 2.6474
+Client 14 accuracy = 1.0000, loss = 2.5298
+
+Round: 25
+Client 1 accuracy = 0.9878, loss = 0.1200
+Client 2 accuracy = 0.9824, loss = 0.1643
+Client 3 accuracy = 0.9812, loss = 0.2069
+Client 4 accuracy = 0.6657, loss = 0.6598
+Client 5 accuracy = 0.4983, loss = 0.7106
+Client 6 accuracy = 0.5085, loss = 0.7124
+Client 7 accuracy = 0.4949, loss = 0.7074
+Client 8 accuracy = 0.4932, loss = 0.9321
+Client 9 accuracy = 0.4984, loss = 0.7929
+Client 10 accuracy = 0.4949, loss = 0.7613
+Client 11 accuracy = 0.4488, loss = 1.2044
+Client 12 accuracy = 0.5000, loss = 2.6516
+Client 13 accuracy = 0.5000, loss = 2.6471
+Client 14 accuracy = 1.0000, loss = 2.5273
+
+Round: 26
+Client 1 accuracy = 0.9869, loss = 0.1267
+Client 2 accuracy = 0.9799, loss = 0.1689
+Client 3 accuracy = 0.9841, loss = 0.1854
+Client 4 accuracy = 0.6623, loss = 0.6738
+Client 5 accuracy = 0.4973, loss = 0.7398
+Client 6 accuracy = 0.4966, loss = 0.7139
+Client 7 accuracy = 0.4919, loss = 0.7131
+Client 8 accuracy = 0.4966, loss = 0.8679
+Client 9 accuracy = 0.5019, loss = 0.7367
+Client 10 accuracy = 0.5054, loss = 0.7990
+Client 11 accuracy = 0.4548, loss = 1.2095
+Client 12 accuracy = 0.5000, loss = 2.6509
+Client 13 accuracy = 0.5000, loss = 2.6468
+Client 14 accuracy = 1.0000, loss = 2.5253
+
+Round: 27
+Client 1 accuracy = 0.9872, loss = 0.1309
+Client 2 accuracy = 0.9831, loss = 0.1706
+Client 3 accuracy = 0.9826, loss = 0.1884
+Client 4 accuracy = 0.6620, loss = 0.6524
+Client 5 accuracy = 0.5017, loss = 0.7068
+Client 6 accuracy = 0.5004, loss = 0.7158
+Client 7 accuracy = 0.4912, loss = 0.7116
+Client 8 accuracy = 0.4860, loss = 0.9385
+Client 9 accuracy = 0.5010, loss = 0.7749
+Client 10 accuracy = 0.4980, loss = 0.8323
+Client 11 accuracy = 0.4608, loss = 1.1793
+Client 12 accuracy = 0.5000, loss = 2.6505
+Client 13 accuracy = 0.5000, loss = 2.6467
+Client 14 accuracy = 1.0000, loss = 2.5238
+
+Round: 28
+Client 1 accuracy = 0.9873, loss = 0.1342
+Client 2 accuracy = 0.9812, loss = 0.1822
+Client 3 accuracy = 0.9821, loss = 0.2114
+Client 4 accuracy = 0.5845, loss = 0.6905
+Client 5 accuracy = 0.4965, loss = 0.7333
+Client 6 accuracy = 0.5052, loss = 0.7120
+Client 7 accuracy = 0.4985, loss = 0.7120
+Client 8 accuracy = 0.5000, loss = 0.9245
+Client 9 accuracy = 0.4924, loss = 0.8073
+Client 10 accuracy = 0.4946, loss = 0.9113
+Client 11 accuracy = 0.4590, loss = 1.1884
+Client 12 accuracy = 0.5000, loss = 2.6504
+Client 13 accuracy = 0.5000, loss = 2.6467
+Client 14 accuracy = 1.0000, loss = 2.5235
+
+Round: 29
+Client 1 accuracy = 0.9863, loss = 0.1461
+Client 2 accuracy = 0.9827, loss = 0.1587
+Client 3 accuracy = 0.9748, loss = 0.2898
+Client 4 accuracy = 0.6181, loss = 0.6771
+Client 5 accuracy = 0.5033, loss = 0.7124
+Client 6 accuracy = 0.5090, loss = 0.7121
+Client 7 accuracy = 0.5001, loss = 0.7103
+Client 8 accuracy = 0.5004, loss = 0.9251
+Client 9 accuracy = 0.4940, loss = 0.7783
+Client 10 accuracy = 0.4934, loss = 0.8683
+Client 11 accuracy = 0.4608, loss = 1.1828
+Client 12 accuracy = 0.5000, loss = 2.6504
+Client 13 accuracy = 0.5000, loss = 2.6469
+Client 14 accuracy = 1.0000, loss = 2.5238
+
+Round: 30
+Client 1 accuracy = 0.9868, loss = 0.1239
+Client 2 accuracy = 0.9819, loss = 0.1802
+Client 3 accuracy = 0.9836, loss = 0.2021
+Client 4 accuracy = 0.6176, loss = 0.6734
+Client 5 accuracy = 0.4980, loss = 0.7136
+Client 6 accuracy = 0.5032, loss = 0.7127
+Client 7 accuracy = 0.4976, loss = 0.7115
+Client 8 accuracy = 0.4985, loss = 0.9275
+Client 9 accuracy = 0.4934, loss = 0.8035
+Client 10 accuracy = 0.4954, loss = 0.8346
+Client 11 accuracy = 0.4565, loss = 1.2035
+Client 12 accuracy = 0.5000, loss = 2.6503
+Client 13 accuracy = 0.5000, loss = 2.6469
+Client 14 accuracy = 1.0000, loss = 2.5234
+
+Round: 31
+Client 1 accuracy = 0.9887, loss = 0.1161
+Client 2 accuracy = 0.9817, loss = 0.1629
+Client 3 accuracy = 0.9837, loss = 0.1930
+Client 4 accuracy = 0.6641, loss = 0.6483
+Client 5 accuracy = 0.4933, loss = 0.7219
+Client 6 accuracy = 0.5001, loss = 0.7095
+Client 7 accuracy = 0.5012, loss = 0.7125
+Client 8 accuracy = 0.5008, loss = 0.8455
+Client 9 accuracy = 0.4978, loss = 0.7435
+Client 10 accuracy = 0.4923, loss = 0.8370
+Client 11 accuracy = 0.4608, loss = 1.1899
+Client 12 accuracy = 0.5000, loss = 2.6501
+Client 13 accuracy = 0.5000, loss = 2.6468
+Client 14 accuracy = 1.0000, loss = 2.5225
+
+Round: 32
+Client 1 accuracy = 0.9889, loss = 0.1153
+Client 2 accuracy = 0.9836, loss = 0.1665
+Client 3 accuracy = 0.9836, loss = 0.1990
+Client 4 accuracy = 0.5408, loss = 0.7014
+Client 5 accuracy = 0.5116, loss = 0.7200
+Client 6 accuracy = 0.4990, loss = 0.7075
+Client 7 accuracy = 0.5037, loss = 0.7070
+Client 8 accuracy = 0.5030, loss = 0.9442
+Client 9 accuracy = 0.5007, loss = 0.8437
+Client 10 accuracy = 0.4914, loss = 0.8436
+Client 11 accuracy = 0.4599, loss = 1.1871
+Client 12 accuracy = 0.5000, loss = 2.6500
+Client 13 accuracy = 0.5000, loss = 2.6468
+Client 14 accuracy = 1.0000, loss = 2.5223
+
+Round: 33
+Client 1 accuracy = 0.9883, loss = 0.1178
+Client 2 accuracy = 0.9814, loss = 0.1757
+Client 3 accuracy = 0.9839, loss = 0.1891
+Client 4 accuracy = 0.5520, loss = 0.6909
+Client 5 accuracy = 0.4977, loss = 0.7475
+Client 6 accuracy = 0.4989, loss = 0.7094
+Client 7 accuracy = 0.5039, loss = 0.7091
+Client 8 accuracy = 0.4894, loss = 0.8131
+Client 9 accuracy = 0.5012, loss = 0.8493
+Client 10 accuracy = 0.4920, loss = 0.8426
+Client 11 accuracy = 0.4548, loss = 1.2196
+Client 12 accuracy = 0.5000, loss = 2.6499
+Client 13 accuracy = 0.5000, loss = 2.6467
+Client 14 accuracy = 1.0000, loss = 2.5223
+
+Round: 34
+Client 1 accuracy = 0.9860, loss = 0.1387
+Client 2 accuracy = 0.9828, loss = 0.1645
+Client 3 accuracy = 0.9814, loss = 0.2164
+Client 4 accuracy = 0.5380, loss = 0.7025
+Client 5 accuracy = 0.5025, loss = 0.7226
+Client 6 accuracy = 0.4937, loss = 0.7100
+Client 7 accuracy = 0.5030, loss = 0.7114
+Client 8 accuracy = 0.5004, loss = 0.9281
+Client 9 accuracy = 0.4926, loss = 0.8050
+Client 10 accuracy = 0.4977, loss = 0.8363
+Client 11 accuracy = 0.4590, loss = 1.2102
+Client 12 accuracy = 0.5000, loss = 2.6497
+Client 13 accuracy = 0.5000, loss = 2.6466
+Client 14 accuracy = 1.0000, loss = 2.5214
+
+Round: 35
+Client 1 accuracy = 0.9886, loss = 0.1127
+Client 2 accuracy = 0.9819, loss = 0.1811
+Client 3 accuracy = 0.9836, loss = 0.1950
+Client 4 accuracy = 0.5679, loss = 0.6995
+Client 5 accuracy = 0.5073, loss = 0.7167
+Client 6 accuracy = 0.5004, loss = 0.7133
+Client 7 accuracy = 0.4993, loss = 0.7083
+Client 8 accuracy = 0.5004, loss = 0.8845
+Client 9 accuracy = 0.5022, loss = 0.8072
+Client 10 accuracy = 0.5009, loss = 0.8407
+Client 11 accuracy = 0.4616, loss = 1.1824
+Client 12 accuracy = 0.5000, loss = 2.6498
+Client 13 accuracy = 0.5000, loss = 2.6468
+Client 14 accuracy = 1.0000, loss = 2.5217
+
+Round: 36
+Client 1 accuracy = 0.9861, loss = 0.1399
+Client 2 accuracy = 0.9823, loss = 0.1778
+Client 3 accuracy = 0.9839, loss = 0.1991
+Client 4 accuracy = 0.4991, loss = 0.7042
+Client 5 accuracy = 0.5035, loss = 0.7205
+Client 6 accuracy = 0.4969, loss = 0.7096
+Client 7 accuracy = 0.5012, loss = 0.7118
+Client 8 accuracy = 0.5008, loss = 0.9239
+Client 9 accuracy = 0.5019, loss = 0.8135
+Client 10 accuracy = 0.5003, loss = 0.8340
+Client 11 accuracy = 0.4556, loss = 1.2055
+Client 12 accuracy = 0.5000, loss = 2.6498
+Client 13 accuracy = 0.5000, loss = 2.6469
+Client 14 accuracy = 1.0000, loss = 2.5221
+
+Round: 37
+Client 1 accuracy = 0.9871, loss = 0.1326
+Client 2 accuracy = 0.9815, loss = 0.1769
+Client 3 accuracy = 0.9833, loss = 0.1992
+Client 4 accuracy = 0.5168, loss = 0.6971
+Client 5 accuracy = 0.4944, loss = 0.7315
+Client 6 accuracy = 0.5120, loss = 0.7110
+Client 7 accuracy = 0.4957, loss = 0.7102
+Client 8 accuracy = 0.5000, loss = 0.9324
+Client 9 accuracy = 0.4929, loss = 0.7255
+Client 10 accuracy = 0.4957, loss = 0.8360
+Client 11 accuracy = 0.4582, loss = 1.1783
+Client 12 accuracy = 0.5000, loss = 2.6500
+Client 13 accuracy = 0.5000, loss = 2.6471
+Client 14 accuracy = 1.0000, loss = 2.5227
+
+Round: 38
+Client 1 accuracy = 0.9893, loss = 0.1162
+Client 2 accuracy = 0.9803, loss = 0.1784
+Client 3 accuracy = 0.9844, loss = 0.1822
+Client 4 accuracy = 0.4991, loss = 0.7031
+Client 5 accuracy = 0.5001, loss = 0.7179
+Client 6 accuracy = 0.5058, loss = 0.7101
+Client 7 accuracy = 0.5049, loss = 0.7086
+Client 8 accuracy = 0.5000, loss = 0.9335
+Client 9 accuracy = 0.4964, loss = 0.8009
+Client 10 accuracy = 0.5026, loss = 0.9179
+Client 11 accuracy = 0.4565, loss = 1.2023
+Client 12 accuracy = 0.5000, loss = 2.6500
+Client 13 accuracy = 0.5000, loss = 2.6472
+Client 14 accuracy = 1.0000, loss = 2.5223
+
+Round: 39
+Client 1 accuracy = 0.9862, loss = 0.1266
+Client 2 accuracy = 0.9814, loss = 0.1608
+Client 3 accuracy = 0.9796, loss = 0.2241
+Client 4 accuracy = 0.4950, loss = 0.7005
+Client 5 accuracy = 0.4974, loss = 0.7282
+Client 6 accuracy = 0.5025, loss = 0.7086
+Client 7 accuracy = 0.4947, loss = 0.7111
+Client 8 accuracy = 0.4894, loss = 0.9106
+Client 9 accuracy = 0.4891, loss = 0.7403
+Client 10 accuracy = 0.4937, loss = 0.8992
+Client 11 accuracy = 0.4573, loss = 1.1959
+Client 12 accuracy = 0.5000, loss = 2.6502
+Client 13 accuracy = 0.5000, loss = 2.6475
+Client 14 accuracy = 1.0000, loss = 2.5230
+
+Round: 40
+Client 1 accuracy = 0.9888, loss = 0.1156
+Client 2 accuracy = 0.9821, loss = 0.1628
+Client 3 accuracy = 0.9836, loss = 0.1982
+Client 4 accuracy = 0.5131, loss = 0.7000
+Client 5 accuracy = 0.5044, loss = 0.7105
+Client 6 accuracy = 0.5065, loss = 0.7120
+Client 7 accuracy = 0.5031, loss = 0.7121
+Client 8 accuracy = 0.5004, loss = 0.9271
+Client 9 accuracy = 0.4874, loss = 0.8137
+Client 10 accuracy = 0.4926, loss = 0.8278
+Client 11 accuracy = 0.4539, loss = 1.2047
+Client 12 accuracy = 0.5000, loss = 2.6501
+Client 13 accuracy = 0.5000, loss = 2.6475
+Client 14 accuracy = 1.0000, loss = 2.5227
+
+Round: 41
+Client 1 accuracy = 0.9878, loss = 0.1213
+Client 2 accuracy = 0.9822, loss = 0.1685
+Client 3 accuracy = 0.9830, loss = 0.1858
+Client 4 accuracy = 0.5052, loss = 0.7082
+Client 5 accuracy = 0.5008, loss = 0.7298
+Client 6 accuracy = 0.5017, loss = 0.7096
+Client 7 accuracy = 0.5037, loss = 0.7101
+Client 8 accuracy = 0.5000, loss = 0.9429
+Client 9 accuracy = 0.5033, loss = 0.8212
+Client 10 accuracy = 0.4963, loss = 0.8456
+Client 11 accuracy = 0.4565, loss = 1.1931
+Client 12 accuracy = 0.5000, loss = 2.6502
+Client 13 accuracy = 0.5000, loss = 2.6475
+Client 14 accuracy = 1.0000, loss = 2.5232
+
+Round: 42
+Client 1 accuracy = 0.9873, loss = 0.1326
+Client 2 accuracy = 0.9837, loss = 0.1635
+Client 3 accuracy = 0.9826, loss = 0.2026
+Client 4 accuracy = 0.5109, loss = 0.7028
+Client 5 accuracy = 0.4968, loss = 0.7250
+Client 6 accuracy = 0.5041, loss = 0.7092
+Client 7 accuracy = 0.5111, loss = 0.7077
+Client 8 accuracy = 0.4853, loss = 0.8132
+Client 9 accuracy = 0.4957, loss = 0.8171
+Client 10 accuracy = 0.5063, loss = 0.8602
+Client 11 accuracy = 0.4633, loss = 1.1823
+Client 12 accuracy = 0.5000, loss = 2.6504
+Client 13 accuracy = 0.5000, loss = 2.6476
+Client 14 accuracy = 1.0000, loss = 2.5239
+
+Round: 43
+Client 1 accuracy = 0.9860, loss = 0.1418
+Client 2 accuracy = 0.9802, loss = 0.1683
+Client 3 accuracy = 0.9843, loss = 0.1897
+Client 4 accuracy = 0.5037, loss = 0.7075
+Client 5 accuracy = 0.5044, loss = 0.7211
+Client 6 accuracy = 0.4983, loss = 0.7123
+Client 7 accuracy = 0.5040, loss = 0.7059
+Client 8 accuracy = 0.5000, loss = 0.9294
+Client 9 accuracy = 0.4978, loss = 0.8078
+Client 10 accuracy = 0.4760, loss = 0.8253
+Client 11 accuracy = 0.4573, loss = 1.1870
+Client 12 accuracy = 0.5000, loss = 2.6503
+Client 13 accuracy = 0.5000, loss = 2.6476
+Client 14 accuracy = 1.0000, loss = 2.5239
+
+Round: 44
+Client 1 accuracy = 0.9887, loss = 0.1286
+Client 2 accuracy = 0.9813, loss = 0.1607
+Client 3 accuracy = 0.9829, loss = 0.2008
+Client 4 accuracy = 0.5049, loss = 0.7008
+Client 5 accuracy = 0.4998, loss = 0.7406
+Client 6 accuracy = 0.4975, loss = 0.7141
+Client 7 accuracy = 0.5037, loss = 0.7080
+Client 8 accuracy = 0.4898, loss = 0.9380
+Client 9 accuracy = 0.4988, loss = 0.8091
+Client 10 accuracy = 0.4943, loss = 0.8300
+Client 11 accuracy = 0.4608, loss = 1.1860
+Client 12 accuracy = 0.5000, loss = 2.6505
+Client 13 accuracy = 0.5000, loss = 2.6478
+Client 14 accuracy = 1.0000, loss = 2.5244
+
+Round: 45
+Client 1 accuracy = 0.9871, loss = 0.1260
+Client 2 accuracy = 0.9826, loss = 0.1564
+Client 3 accuracy = 0.9821, loss = 0.2121
+Client 4 accuracy = 0.5027, loss = 0.7016
+Client 5 accuracy = 0.5010, loss = 0.7172
+Client 6 accuracy = 0.4991, loss = 0.7072
+Client 7 accuracy = 0.4939, loss = 0.7094
+Client 8 accuracy = 0.5004, loss = 0.9239
+Client 9 accuracy = 0.4995, loss = 0.8121
+Client 10 accuracy = 0.5077, loss = 0.8339
+Client 11 accuracy = 0.4590, loss = 1.1914
+Client 12 accuracy = 0.5000, loss = 2.6506
+Client 13 accuracy = 0.5000, loss = 2.6479
+Client 14 accuracy = 1.0000, loss = 2.5247
+
+Round: 46
+Client 1 accuracy = 0.9869, loss = 0.1243
+Client 2 accuracy = 0.9820, loss = 0.1691
+Client 3 accuracy = 0.9829, loss = 0.1934
+Client 4 accuracy = 0.5070, loss = 0.7034
+Client 5 accuracy = 0.5052, loss = 0.7163
+Client 6 accuracy = 0.5073, loss = 0.7158
+Client 7 accuracy = 0.4951, loss = 0.7071
+Client 8 accuracy = 0.5000, loss = 0.8787
+Client 9 accuracy = 0.5021, loss = 0.8050
+Client 10 accuracy = 0.4829, loss = 0.7668
+Client 11 accuracy = 0.4582, loss = 1.1959
+Client 12 accuracy = 0.5000, loss = 2.6507
+Client 13 accuracy = 0.5000, loss = 2.6479
+Client 14 accuracy = 1.0000, loss = 2.5248
+
+Round: 47
+Client 1 accuracy = 0.9890, loss = 0.1131
+Client 2 accuracy = 0.9841, loss = 0.1661
+Client 3 accuracy = 0.9819, loss = 0.2169
+Client 4 accuracy = 0.5070, loss = 0.7070
+Client 5 accuracy = 0.5038, loss = 0.7261
+Client 6 accuracy = 0.5045, loss = 0.7121
+Client 7 accuracy = 0.5002, loss = 0.7143
+Client 8 accuracy = 0.5026, loss = 0.8800
+Client 9 accuracy = 0.4943, loss = 0.8037
+Client 10 accuracy = 0.4857, loss = 0.8543
+Client 11 accuracy = 0.4625, loss = 1.1776
+Client 12 accuracy = 0.5000, loss = 2.6507
+Client 13 accuracy = 0.5000, loss = 2.6479
+Client 14 accuracy = 1.0000, loss = 2.5247
+
+Round: 48
+Client 1 accuracy = 0.9882, loss = 0.1151
+Client 2 accuracy = 0.9816, loss = 0.1700
+Client 3 accuracy = 0.9836, loss = 0.1921
+Client 4 accuracy = 0.5093, loss = 0.7026
+Client 5 accuracy = 0.5041, loss = 0.7296
+Client 6 accuracy = 0.5009, loss = 0.7111
+Client 7 accuracy = 0.4971, loss = 0.7321
+Client 8 accuracy = 0.5034, loss = 0.8096
+Client 9 accuracy = 0.4959, loss = 0.8112
+Client 10 accuracy = 0.4903, loss = 0.7707
+Client 11 accuracy = 0.4556, loss = 1.1964
+Client 12 accuracy = 0.5000, loss = 2.6507
+Client 13 accuracy = 0.5000, loss = 2.6479
+Client 14 accuracy = 1.0000, loss = 2.5252
+
+Round: 49
+Client 1 accuracy = 0.9879, loss = 0.1162
+Client 2 accuracy = 0.9826, loss = 0.1657
+Client 3 accuracy = 0.9811, loss = 0.1946
+Client 4 accuracy = 0.4984, loss = 0.7026
+Client 5 accuracy = 0.5043, loss = 0.7163
+Client 6 accuracy = 0.4973, loss = 0.7086
+Client 7 accuracy = 0.4986, loss = 0.7152
+Client 8 accuracy = 0.5011, loss = 0.9281
+Client 9 accuracy = 0.4972, loss = 0.8119
+Client 10 accuracy = 0.4963, loss = 0.8762
+Client 11 accuracy = 0.4480, loss = 1.2029
+Client 12 accuracy = 0.5000, loss = 2.6507
+Client 13 accuracy = 0.5000, loss = 2.6480
+Client 14 accuracy = 1.0000, loss = 2.5253
+
+Round: 50
+Client 1 accuracy = 0.9886, loss = 0.1211
+Client 2 accuracy = 0.9820, loss = 0.1629
+Client 3 accuracy = 0.9847, loss = 0.1892
+Client 4 accuracy = 0.5035, loss = 0.7034
+Client 5 accuracy = 0.5007, loss = 0.7601
+Client 6 accuracy = 0.5015, loss = 0.7073
+Client 7 accuracy = 0.5051, loss = 0.7197
+Client 8 accuracy = 0.4879, loss = 0.9402
+Client 9 accuracy = 0.4997, loss = 0.7984
+Client 10 accuracy = 0.4980, loss = 0.8396
+Client 11 accuracy = 0.4565, loss = 1.2049
+Client 12 accuracy = 0.5000, loss = 2.6508
+Client 13 accuracy = 0.5000, loss = 2.6482
+Client 14 accuracy = 1.0000, loss = 2.5259
+
+Round: 51
+Client 1 accuracy = 0.9869, loss = 0.1326
+Client 2 accuracy = 0.9810, loss = 0.1707
+Client 3 accuracy = 0.9831, loss = 0.1985
+Client 4 accuracy = 0.5006, loss = 0.7029
+Client 5 accuracy = 0.4971, loss = 0.7731
+Client 6 accuracy = 0.4970, loss = 0.7110
+Client 7 accuracy = 0.5036, loss = 0.7113
+Client 8 accuracy = 0.4970, loss = 0.8813
+Client 9 accuracy = 0.4998, loss = 0.8057
+Client 10 accuracy = 0.5057, loss = 0.8656
+Client 11 accuracy = 0.4625, loss = 1.1755
+Client 12 accuracy = 0.5000, loss = 2.6508
+Client 13 accuracy = 0.5000, loss = 2.6482
+Client 14 accuracy = 1.0000, loss = 2.5256
+
+Round: 52
+Client 1 accuracy = 0.9862, loss = 0.1277
+Client 2 accuracy = 0.9801, loss = 0.1706
+Client 3 accuracy = 0.9830, loss = 0.1898
+Client 4 accuracy = 0.5044, loss = 0.7021
+Client 5 accuracy = 0.5028, loss = 0.7078
+Client 6 accuracy = 0.4908, loss = 0.7089
+Client 7 accuracy = 0.4989, loss = 0.7118
+Client 8 accuracy = 0.4868, loss = 0.8699
+Client 9 accuracy = 0.5155, loss = 0.7914
+Client 10 accuracy = 0.4991, loss = 0.9214
+Client 11 accuracy = 0.4394, loss = 1.2126
+Client 12 accuracy = 0.5000, loss = 2.6509
+Client 13 accuracy = 0.5000, loss = 2.6483
+Client 14 accuracy = 1.0000, loss = 2.5258
+
+Round: 53
+Client 1 accuracy = 0.9882, loss = 0.1153
+Client 2 accuracy = 0.9819, loss = 0.1642
+Client 3 accuracy = 0.9764, loss = 0.2768
+Client 4 accuracy = 0.5075, loss = 0.7128
+Client 5 accuracy = 0.5019, loss = 0.7131
+Client 6 accuracy = 0.4922, loss = 0.7150
+Client 7 accuracy = 0.5056, loss = 0.7046
+Client 8 accuracy = 0.4955, loss = 0.8458
+Client 9 accuracy = 0.4807, loss = 0.8027
+Client 10 accuracy = 0.4866, loss = 0.8238
+Client 11 accuracy = 0.4556, loss = 1.2100
+Client 12 accuracy = 0.5000, loss = 2.6511
+Client 13 accuracy = 0.5000, loss = 2.6485
+Client 14 accuracy = 1.0000, loss = 2.5259
+
+Round: 54
+Client 1 accuracy = 0.9886, loss = 0.1199
+Client 2 accuracy = 0.9824, loss = 0.1556
+Client 3 accuracy = 0.9759, loss = 0.2683
+Client 4 accuracy = 0.5054, loss = 0.7013
+Client 5 accuracy = 0.5020, loss = 0.7219
+Client 6 accuracy = 0.5002, loss = 0.7176
+Client 7 accuracy = 0.4947, loss = 0.7071
+Client 8 accuracy = 0.5008, loss = 0.9341
+Client 9 accuracy = 0.5026, loss = 0.7288
+Client 10 accuracy = 0.5020, loss = 0.8643
+Client 11 accuracy = 0.4590, loss = 1.1935
+Client 12 accuracy = 0.5000, loss = 2.6510
+Client 13 accuracy = 0.5000, loss = 2.6486
+Client 14 accuracy = 1.0000, loss = 2.5257
+
+Round: 55
+Client 1 accuracy = 0.9877, loss = 0.1221
+Client 2 accuracy = 0.9819, loss = 0.1615
+Client 3 accuracy = 0.9826, loss = 0.1974
+Client 4 accuracy = 0.5023, loss = 0.7010
+Client 5 accuracy = 0.5041, loss = 0.8104
+Client 6 accuracy = 0.5010, loss = 0.7097
+Client 7 accuracy = 0.4971, loss = 0.7131
+Client 8 accuracy = 0.5011, loss = 0.8975
+Client 9 accuracy = 0.5021, loss = 0.7948
+Client 10 accuracy = 0.4980, loss = 0.7933
+Client 11 accuracy = 0.4573, loss = 1.1905
+Client 12 accuracy = 0.5000, loss = 2.6513
+Client 13 accuracy = 0.5000, loss = 2.6487
+Client 14 accuracy = 1.0000, loss = 2.5264
+
+Round: 56
+Client 1 accuracy = 0.9873, loss = 0.1364
+Client 2 accuracy = 0.9832, loss = 0.1636
+Client 3 accuracy = 0.9833, loss = 0.1761
+Client 4 accuracy = 0.4981, loss = 0.7034
+Client 5 accuracy = 0.5037, loss = 0.7660
+Client 6 accuracy = 0.4991, loss = 0.7187
+Client 7 accuracy = 0.5074, loss = 0.7076
+Client 8 accuracy = 0.5000, loss = 0.9304
+Client 9 accuracy = 0.4950, loss = 0.8685
+Client 10 accuracy = 0.5051, loss = 0.8422
+Client 11 accuracy = 0.4539, loss = 1.1998
+Client 12 accuracy = 0.5000, loss = 2.6514
+Client 13 accuracy = 0.5000, loss = 2.6489
+Client 14 accuracy = 1.0000, loss = 2.5269
+
+Round: 57
+Client 1 accuracy = 0.9868, loss = 0.1307
+Client 2 accuracy = 0.9816, loss = 0.1630
+Client 3 accuracy = 0.9763, loss = 0.2735
+Client 4 accuracy = 0.5030, loss = 0.7010
+Client 5 accuracy = 0.4879, loss = 0.7159
+Client 6 accuracy = 0.4959, loss = 0.7117
+Client 7 accuracy = 0.4982, loss = 0.7115
+Client 8 accuracy = 0.5034, loss = 0.9222
+Client 9 accuracy = 0.4962, loss = 0.7814
+Client 10 accuracy = 0.4971, loss = 0.8448
+Client 11 accuracy = 0.4582, loss = 1.1923
+Client 12 accuracy = 0.5000, loss = 2.6515
+Client 13 accuracy = 0.5000, loss = 2.6491
+Client 14 accuracy = 1.0000, loss = 2.5276
+
+Round: 58
+Client 1 accuracy = 0.9859, loss = 0.1496
+Client 2 accuracy = 0.9804, loss = 0.1682
+Client 3 accuracy = 0.9832, loss = 0.1833
+Client 4 accuracy = 0.5002, loss = 0.7037
+Client 5 accuracy = 0.5044, loss = 0.7321
+Client 6 accuracy = 0.4977, loss = 0.7124
+Client 7 accuracy = 0.4962, loss = 0.7121
+Client 8 accuracy = 0.5004, loss = 0.8994
+Client 9 accuracy = 0.4969, loss = 0.8199
+Client 10 accuracy = 0.5011, loss = 0.8308
+Client 11 accuracy = 0.4599, loss = 1.1881
+Client 12 accuracy = 0.5000, loss = 2.6515
+Client 13 accuracy = 0.5000, loss = 2.6491
+Client 14 accuracy = 1.0000, loss = 2.5277
+
+Round: 59
+Client 1 accuracy = 0.9871, loss = 0.1380
+Client 2 accuracy = 0.9812, loss = 0.1694
+Client 3 accuracy = 0.9797, loss = 0.2387
+Client 4 accuracy = 0.5044, loss = 0.7031
+Client 5 accuracy = 0.4987, loss = 0.7398
+Client 6 accuracy = 0.5107, loss = 0.7190
+Client 7 accuracy = 0.4872, loss = 0.7088
+Client 8 accuracy = 0.5000, loss = 0.9352
+Client 9 accuracy = 0.4979, loss = 0.7756
+Client 10 accuracy = 0.5006, loss = 0.8579
+Client 11 accuracy = 0.4514, loss = 1.2062
+Client 12 accuracy = 0.5000, loss = 2.6514
+Client 13 accuracy = 0.5000, loss = 2.6492
+Client 14 accuracy = 1.0000, loss = 2.5277
+
+Round: 60
+Client 1 accuracy = 0.9884, loss = 0.1255
+Client 2 accuracy = 0.9816, loss = 0.1672
+Client 3 accuracy = 0.9829, loss = 0.1895
+Client 4 accuracy = 0.5029, loss = 0.7009
+Client 5 accuracy = 0.5014, loss = 0.7251
+Client 6 accuracy = 0.5038, loss = 0.7107
+Client 7 accuracy = 0.5028, loss = 0.7110
+Client 8 accuracy = 0.5106, loss = 0.9358
+Client 9 accuracy = 0.4953, loss = 0.8002
+Client 10 accuracy = 0.4960, loss = 0.7725
+Client 11 accuracy = 0.4573, loss = 1.1953
+Client 12 accuracy = 0.5000, loss = 2.6514
+Client 13 accuracy = 0.5000, loss = 2.6493
+Client 14 accuracy = 1.0000, loss = 2.5280
+
+Round: 61
+Client 1 accuracy = 0.9871, loss = 0.1268
+Client 2 accuracy = 0.9816, loss = 0.1604
+Client 3 accuracy = 0.9826, loss = 0.1867
+Client 4 accuracy = 0.4992, loss = 0.7022
+Client 5 accuracy = 0.4981, loss = 0.7176
+Client 6 accuracy = 0.4949, loss = 0.7081
+Client 7 accuracy = 0.5051, loss = 0.7111
+Client 8 accuracy = 0.5004, loss = 0.8313
+Client 9 accuracy = 0.5000, loss = 0.7695
+Client 10 accuracy = 0.5000, loss = 0.8448
+Client 11 accuracy = 0.4573, loss = 1.2014
+Client 12 accuracy = 0.5000, loss = 2.6514
+Client 13 accuracy = 0.5000, loss = 2.6492
+Client 14 accuracy = 1.0000, loss = 2.5276
+
+Round: 62
+Client 1 accuracy = 0.9872, loss = 0.1298
+Client 2 accuracy = 0.9804, loss = 0.1853
+Client 3 accuracy = 0.9824, loss = 0.1916
+Client 4 accuracy = 0.5016, loss = 0.7007
+Client 5 accuracy = 0.4994, loss = 0.7745
+Client 6 accuracy = 0.4910, loss = 0.7077
+Client 7 accuracy = 0.5011, loss = 0.7091
+Client 8 accuracy = 0.4962, loss = 0.8457
+Client 9 accuracy = 0.5060, loss = 0.7726
+Client 10 accuracy = 0.5017, loss = 0.8437
+Client 11 accuracy = 0.4573, loss = 1.1986
+Client 12 accuracy = 0.5000, loss = 2.6513
+Client 13 accuracy = 0.5000, loss = 2.6491
+Client 14 accuracy = 1.0000, loss = 2.5273
+
+Round: 63
+Client 1 accuracy = 0.9864, loss = 0.1403
+Client 2 accuracy = 0.9834, loss = 0.1582
+Client 3 accuracy = 0.9837, loss = 0.1964
+Client 4 accuracy = 0.4988, loss = 0.7016
+Client 5 accuracy = 0.5021, loss = 0.7263
+Client 6 accuracy = 0.4949, loss = 0.7115
+Client 7 accuracy = 0.5033, loss = 0.7084
+Client 8 accuracy = 0.4977, loss = 0.9355
+Client 9 accuracy = 0.4976, loss = 0.8051
+Client 10 accuracy = 0.4989, loss = 0.8416
+Client 11 accuracy = 0.4573, loss = 1.1930
+Client 12 accuracy = 0.5000, loss = 2.6514
+Client 13 accuracy = 0.5000, loss = 2.6491
+Client 14 accuracy = 1.0000, loss = 2.5273
+
+Round: 64
+Client 1 accuracy = 0.9875, loss = 0.1322
+Client 2 accuracy = 0.9817, loss = 0.1671
+Client 3 accuracy = 0.9829, loss = 0.1876
+Client 4 accuracy = 0.5196, loss = 0.6991
+Client 5 accuracy = 0.5022, loss = 0.7260
+Client 6 accuracy = 0.5019, loss = 0.7117
+Client 7 accuracy = 0.5010, loss = 0.7149
+Client 8 accuracy = 0.4970, loss = 0.8995
+Client 9 accuracy = 0.4933, loss = 0.8051
+Client 10 accuracy = 0.4960, loss = 0.8427
+Client 11 accuracy = 0.4608, loss = 1.1929
+Client 12 accuracy = 0.5000, loss = 2.6516
+Client 13 accuracy = 0.5000, loss = 2.6493
+Client 14 accuracy = 1.0000, loss = 2.5283
+
+Round: 65
+Client 1 accuracy = 0.9872, loss = 0.1349
+Client 2 accuracy = 0.9813, loss = 0.1715
+Client 3 accuracy = 0.9834, loss = 0.1920
+Client 4 accuracy = 0.5014, loss = 0.7037
+Client 5 accuracy = 0.5026, loss = 0.7221
+Client 6 accuracy = 0.5073, loss = 0.7102
+Client 7 accuracy = 0.4953, loss = 0.7060
+Client 8 accuracy = 0.4906, loss = 0.9293
+Client 9 accuracy = 0.4872, loss = 0.8007
+Client 10 accuracy = 0.5145, loss = 0.8295
+Client 11 accuracy = 0.4625, loss = 1.1838
+Client 12 accuracy = 0.5000, loss = 2.6516
+Client 13 accuracy = 0.5000, loss = 2.6494
+Client 14 accuracy = 1.0000, loss = 2.5285
+
+Round: 66
+Client 1 accuracy = 0.9879, loss = 0.1267
+Client 2 accuracy = 0.9829, loss = 0.1637
+Client 3 accuracy = 0.9821, loss = 0.2039
+Client 4 accuracy = 0.5068, loss = 0.7100
+Client 5 accuracy = 0.4973, loss = 0.7109
+Client 6 accuracy = 0.4969, loss = 0.7192
+Client 7 accuracy = 0.5004, loss = 0.7096
+Client 8 accuracy = 0.5004, loss = 0.9117
+Client 9 accuracy = 0.5012, loss = 0.7850
+Client 10 accuracy = 0.4912, loss = 0.8737
+Client 11 accuracy = 0.4582, loss = 1.1965
+Client 12 accuracy = 0.5000, loss = 2.6518
+Client 13 accuracy = 0.5000, loss = 2.6495
+Client 14 accuracy = 1.0000, loss = 2.5291
+
+Round: 67
+Client 1 accuracy = 0.9873, loss = 0.1317
+Client 2 accuracy = 0.9789, loss = 0.1905
+Client 3 accuracy = 0.9827, loss = 0.2104
+Client 4 accuracy = 0.5128, loss = 0.7024
+Client 5 accuracy = 0.5009, loss = 0.7153
+Client 6 accuracy = 0.5038, loss = 0.7095
+Client 7 accuracy = 0.4988, loss = 0.7112
+Client 8 accuracy = 0.4943, loss = 0.9039
+Client 9 accuracy = 0.5048, loss = 0.8057
+Client 10 accuracy = 0.5160, loss = 0.8279
+Client 11 accuracy = 0.4582, loss = 1.1999
+Client 12 accuracy = 0.5000, loss = 2.6520
+Client 13 accuracy = 0.5000, loss = 2.6497
+Client 14 accuracy = 1.0000, loss = 2.5293
+
+Round: 68
+Client 1 accuracy = 0.9862, loss = 0.1422
+Client 2 accuracy = 0.9825, loss = 0.1580
+Client 3 accuracy = 0.9827, loss = 0.2018
+Client 4 accuracy = 0.5071, loss = 0.7058
+Client 5 accuracy = 0.5076, loss = 0.7394
+Client 6 accuracy = 0.4996, loss = 0.7123
+Client 7 accuracy = 0.5033, loss = 0.7075
+Client 8 accuracy = 0.4762, loss = 0.8152
+Client 9 accuracy = 0.4990, loss = 0.7870
+Client 10 accuracy = 0.4940, loss = 0.8706
+Client 11 accuracy = 0.4582, loss = 1.1977
+Client 12 accuracy = 0.5000, loss = 2.6519
+Client 13 accuracy = 0.5000, loss = 2.6498
+Client 14 accuracy = 1.0000, loss = 2.5292
+
+Round: 69
+Client 1 accuracy = 0.9861, loss = 0.1358
+Client 2 accuracy = 0.9808, loss = 0.1655
+Client 3 accuracy = 0.9842, loss = 0.1920
+Client 4 accuracy = 0.5058, loss = 0.7030
+Client 5 accuracy = 0.5033, loss = 0.7595
+Client 6 accuracy = 0.4955, loss = 0.7057
+Client 7 accuracy = 0.4982, loss = 0.7101
+Client 8 accuracy = 0.5008, loss = 0.9365
+Client 9 accuracy = 0.4950, loss = 0.8057
+Client 10 accuracy = 0.4917, loss = 0.8501
+Client 11 accuracy = 0.4556, loss = 1.1983
+Client 12 accuracy = 0.5000, loss = 2.6519
+Client 13 accuracy = 0.5000, loss = 2.6498
+Client 14 accuracy = 1.0000, loss = 2.5290
+
+Round: 70
+Client 1 accuracy = 0.9874, loss = 0.1262
+Client 2 accuracy = 0.9833, loss = 0.1549
+Client 3 accuracy = 0.9823, loss = 0.2067
+Client 4 accuracy = 0.4989, loss = 0.7098
+Client 5 accuracy = 0.5039, loss = 0.7309
+Client 6 accuracy = 0.4979, loss = 0.7102
+Client 7 accuracy = 0.5079, loss = 0.7096
+Client 8 accuracy = 0.5004, loss = 0.9271
+Client 9 accuracy = 0.5003, loss = 0.7327
+Client 10 accuracy = 0.4883, loss = 0.8319
+Client 11 accuracy = 0.4590, loss = 1.1843
+Client 12 accuracy = 0.5000, loss = 2.6519
+Client 13 accuracy = 0.5000, loss = 2.6498
+Client 14 accuracy = 1.0000, loss = 2.5290
+
+Round: 71
+Client 1 accuracy = 0.9881, loss = 0.1217
+Client 2 accuracy = 0.9799, loss = 0.1681
+Client 3 accuracy = 0.9831, loss = 0.1885
+Client 4 accuracy = 0.4982, loss = 0.7019
+Client 5 accuracy = 0.4952, loss = 0.7436
+Client 6 accuracy = 0.5019, loss = 0.7121
+Client 7 accuracy = 0.5010, loss = 0.7125
+Client 8 accuracy = 0.5026, loss = 0.9027
+Client 9 accuracy = 0.4934, loss = 0.8097
+Client 10 accuracy = 0.5017, loss = 0.8381
+Client 11 accuracy = 0.4608, loss = 1.1902
+Client 12 accuracy = 0.5000, loss = 2.6519
+Client 13 accuracy = 0.5000, loss = 2.6498
+Client 14 accuracy = 1.0000, loss = 2.5288
+
+Round: 72
+Client 1 accuracy = 0.9860, loss = 0.1466
+Client 2 accuracy = 0.9824, loss = 0.1545
+Client 3 accuracy = 0.9838, loss = 0.1947
+Client 4 accuracy = 0.4996, loss = 0.7077
+Client 5 accuracy = 0.5042, loss = 0.7650
+Client 6 accuracy = 0.5030, loss = 0.7133
+Client 7 accuracy = 0.4906, loss = 0.7139
+Client 8 accuracy = 0.4894, loss = 0.8669
+Client 9 accuracy = 0.4902, loss = 0.7334
+Client 10 accuracy = 0.5003, loss = 0.8582
+Client 11 accuracy = 0.4590, loss = 1.1786
+Client 12 accuracy = 0.5000, loss = 2.6520
+Client 13 accuracy = 0.5000, loss = 2.6499
+Client 14 accuracy = 1.0000, loss = 2.5291
+
+Round: 73
+Client 1 accuracy = 0.9874, loss = 0.1403
+Client 2 accuracy = 0.9804, loss = 0.1717
+Client 3 accuracy = 0.9834, loss = 0.2013
+Client 4 accuracy = 0.5020, loss = 0.7036
+Client 5 accuracy = 0.5029, loss = 0.7400
+Client 6 accuracy = 0.4986, loss = 0.7100
+Client 7 accuracy = 0.4951, loss = 0.7118
+Client 8 accuracy = 0.5000, loss = 0.9457
+Client 9 accuracy = 0.4928, loss = 0.8071
+Client 10 accuracy = 0.5000, loss = 0.8324
+Client 11 accuracy = 0.4556, loss = 1.1984
+Client 12 accuracy = 0.5000, loss = 2.6521
+Client 13 accuracy = 0.5000, loss = 2.6499
+Client 14 accuracy = 1.0000, loss = 2.5293
+
+Round: 74
+Client 1 accuracy = 0.9865, loss = 0.1316
+Client 2 accuracy = 0.9797, loss = 0.1631
+Client 3 accuracy = 0.9829, loss = 0.2000
+Client 4 accuracy = 0.5045, loss = 0.7037
+Client 5 accuracy = 0.4954, loss = 0.7252
+Client 6 accuracy = 0.4977, loss = 0.7170
+Client 7 accuracy = 0.4940, loss = 0.7055
+Client 8 accuracy = 0.5008, loss = 0.9185
+Client 9 accuracy = 0.5029, loss = 0.8031
+Client 10 accuracy = 0.5000, loss = 0.7768
+Client 11 accuracy = 0.4497, loss = 1.2139
+Client 12 accuracy = 0.5000, loss = 2.6522
+Client 13 accuracy = 0.5000, loss = 2.6500
+Client 14 accuracy = 1.0000, loss = 2.5298
+
+Round: 75
+Client 1 accuracy = 0.9878, loss = 0.1268
+Client 2 accuracy = 0.9809, loss = 0.1874
+Client 3 accuracy = 0.9841, loss = 0.1909
+Client 4 accuracy = 0.4964, loss = 0.7008
+Client 5 accuracy = 0.5071, loss = 0.7268
+Client 6 accuracy = 0.5024, loss = 0.7141
+Client 7 accuracy = 0.5036, loss = 0.7078
+Client 8 accuracy = 0.4977, loss = 0.9431
+Client 9 accuracy = 0.4946, loss = 0.8033
+Client 10 accuracy = 0.5051, loss = 0.8323
+Client 11 accuracy = 0.4565, loss = 1.2055
+Client 12 accuracy = 0.5000, loss = 2.6522
+Client 13 accuracy = 0.5000, loss = 2.6500
+Client 14 accuracy = 1.0000, loss = 2.5300
+
+Round: 76
+Client 1 accuracy = 0.9876, loss = 0.1247
+Client 2 accuracy = 0.9808, loss = 0.1718
+Client 3 accuracy = 0.9848, loss = 0.1869
+Client 4 accuracy = 0.5047, loss = 0.7015
+Client 5 accuracy = 0.4934, loss = 0.7556
+Client 6 accuracy = 0.5012, loss = 0.7105
+Client 7 accuracy = 0.4923, loss = 0.7091
+Client 8 accuracy = 0.5049, loss = 0.8635
+Client 9 accuracy = 0.4965, loss = 0.8024
+Client 10 accuracy = 0.5006, loss = 0.8291
+Client 11 accuracy = 0.4556, loss = 1.2126
+Client 12 accuracy = 0.5000, loss = 2.6523
+Client 13 accuracy = 0.5000, loss = 2.6503
+Client 14 accuracy = 1.0000, loss = 2.5304
+
+Round: 77
+Client 1 accuracy = 0.9862, loss = 0.1348
+Client 2 accuracy = 0.9818, loss = 0.1600
+Client 3 accuracy = 0.9813, loss = 0.2261
+Client 4 accuracy = 0.5042, loss = 0.7025
+Client 5 accuracy = 0.5009, loss = 0.7156
+Client 6 accuracy = 0.4953, loss = 0.7151
+Client 7 accuracy = 0.5052, loss = 0.7090
+Client 8 accuracy = 0.4936, loss = 0.8795
+Client 9 accuracy = 0.4984, loss = 0.7944
+Client 10 accuracy = 0.5006, loss = 0.8290
+Client 11 accuracy = 0.4548, loss = 1.2114
+Client 12 accuracy = 0.5000, loss = 2.6524
+Client 13 accuracy = 0.5000, loss = 2.6504
+Client 14 accuracy = 1.0000, loss = 2.5304
+
+Round: 78
+Client 1 accuracy = 0.9867, loss = 0.1303
+Client 2 accuracy = 0.9791, loss = 0.1870
+Client 3 accuracy = 0.9832, loss = 0.1783
+Client 4 accuracy = 0.5039, loss = 0.7028
+Client 5 accuracy = 0.5082, loss = 0.7434
+Client 6 accuracy = 0.4945, loss = 0.7096
+Client 7 accuracy = 0.5075, loss = 0.7071
+Client 8 accuracy = 0.4849, loss = 0.8577
+Client 9 accuracy = 0.4976, loss = 0.7953
+Client 10 accuracy = 0.4937, loss = 0.8367
+Client 11 accuracy = 0.4565, loss = 1.1966
+Client 12 accuracy = 0.5000, loss = 2.6524
+Client 13 accuracy = 0.5000, loss = 2.6503
+Client 14 accuracy = 1.0000, loss = 2.5302
+
+Round: 79
+Client 1 accuracy = 0.9869, loss = 0.1280
+Client 2 accuracy = 0.9829, loss = 0.1664
+Client 3 accuracy = 0.9829, loss = 0.2024
+Client 4 accuracy = 0.5092, loss = 0.7009
+Client 5 accuracy = 0.5026, loss = 0.7196
+Client 6 accuracy = 0.4924, loss = 0.7143
+Client 7 accuracy = 0.5006, loss = 0.7080
+Client 8 accuracy = 0.5004, loss = 0.9414
+Client 9 accuracy = 0.4990, loss = 0.8039
+Client 10 accuracy = 0.5011, loss = 0.8442
+Client 11 accuracy = 0.4701, loss = 1.2048
+Client 12 accuracy = 0.5000, loss = 2.6522
+Client 13 accuracy = 0.5000, loss = 2.6504
+Client 14 accuracy = 1.0000, loss = 2.5300
+
+Round: 80
+Client 1 accuracy = 0.9878, loss = 0.1233
+Client 2 accuracy = 0.9812, loss = 0.1625
+Client 3 accuracy = 0.9842, loss = 0.1916
+Client 4 accuracy = 0.5021, loss = 0.7102
+Client 5 accuracy = 0.4999, loss = 0.7326
+Client 6 accuracy = 0.5018, loss = 0.7108
+Client 7 accuracy = 0.4915, loss = 0.7132
+Client 8 accuracy = 0.5004, loss = 0.8879
+Client 9 accuracy = 0.4936, loss = 0.8051
+Client 10 accuracy = 0.4994, loss = 0.8363
+Client 11 accuracy = 0.4573, loss = 1.1982
+Client 12 accuracy = 0.5000, loss = 2.6525
+Client 13 accuracy = 0.5000, loss = 2.6506
+Client 14 accuracy = 1.0000, loss = 2.5309
+
+Round: 81
+Client 1 accuracy = 0.9872, loss = 0.1232
+Client 2 accuracy = 0.9812, loss = 0.1652
+Client 3 accuracy = 0.9807, loss = 0.2120
+Client 4 accuracy = 0.4941, loss = 0.7062
+Client 5 accuracy = 0.4975, loss = 0.7147
+Client 6 accuracy = 0.5105, loss = 0.7199
+Client 7 accuracy = 0.5030, loss = 0.7088
+Client 8 accuracy = 0.4977, loss = 0.8772
+Client 9 accuracy = 0.4907, loss = 0.8102
+Client 10 accuracy = 0.4826, loss = 0.8367
+Client 11 accuracy = 0.4590, loss = 1.1937
+Client 12 accuracy = 0.5000, loss = 2.6527
+Client 13 accuracy = 0.5000, loss = 2.6508
+Client 14 accuracy = 1.0000, loss = 2.5316
+
+Round: 82
+Client 1 accuracy = 0.9865, loss = 0.1385
+Client 2 accuracy = 0.9827, loss = 0.1722
+Client 3 accuracy = 0.9818, loss = 0.2112
+Client 4 accuracy = 0.5058, loss = 0.7035
+Client 5 accuracy = 0.5022, loss = 0.7486
+Client 6 accuracy = 0.5040, loss = 0.7072
+Client 7 accuracy = 0.5015, loss = 0.7155
+Client 8 accuracy = 0.4898, loss = 0.9250
+Client 9 accuracy = 0.5040, loss = 0.8135
+Client 10 accuracy = 0.5031, loss = 0.8331
+Client 11 accuracy = 0.4625, loss = 1.1715
+Client 12 accuracy = 0.5000, loss = 2.6527
+Client 13 accuracy = 0.5000, loss = 2.6509
+Client 14 accuracy = 1.0000, loss = 2.5317
+
+Round: 83
+Client 1 accuracy = 0.9883, loss = 0.1139
+Client 2 accuracy = 0.9837, loss = 0.1558
+Client 3 accuracy = 0.9824, loss = 0.1999
+Client 4 accuracy = 0.5056, loss = 0.7009
+Client 5 accuracy = 0.5031, loss = 0.7207
+Client 6 accuracy = 0.5008, loss = 0.7107
+Client 7 accuracy = 0.4978, loss = 0.7063
+Client 8 accuracy = 0.5038, loss = 0.9340
+Client 9 accuracy = 0.4893, loss = 0.8059
+Client 10 accuracy = 0.4826, loss = 0.8292
+Client 11 accuracy = 0.4582, loss = 1.1931
+Client 12 accuracy = 0.5000, loss = 2.6529
+Client 13 accuracy = 0.5000, loss = 2.6510
+Client 14 accuracy = 1.0000, loss = 2.5321
+
+Round: 84
+Client 1 accuracy = 0.9880, loss = 0.1304
+Client 2 accuracy = 0.9819, loss = 0.1642
+Client 3 accuracy = 0.9837, loss = 0.1724
+Client 4 accuracy = 0.4973, loss = 0.7091
+Client 5 accuracy = 0.5060, loss = 0.7578
+Client 6 accuracy = 0.5004, loss = 0.7094
+Client 7 accuracy = 0.4990, loss = 0.7092
+Client 8 accuracy = 0.4958, loss = 0.9375
+Client 9 accuracy = 0.5021, loss = 0.8201
+Client 10 accuracy = 0.5020, loss = 0.8304
+Client 11 accuracy = 0.4599, loss = 1.1818
+Client 12 accuracy = 0.5000, loss = 2.6529
+Client 13 accuracy = 0.5000, loss = 2.6510
+Client 14 accuracy = 1.0000, loss = 2.5324
+
+Round: 85
+Client 1 accuracy = 0.9872, loss = 0.1292
+Client 2 accuracy = 0.9824, loss = 0.1626
+Client 3 accuracy = 0.9801, loss = 0.2364
+Client 4 accuracy = 0.5039, loss = 0.7028
+Client 5 accuracy = 0.4977, loss = 0.7101
+Client 6 accuracy = 0.5042, loss = 0.7198
+Client 7 accuracy = 0.4964, loss = 0.7107
+Client 8 accuracy = 0.4985, loss = 0.9106
+Client 9 accuracy = 0.4955, loss = 0.8057
+Client 10 accuracy = 0.4980, loss = 0.7745
+Client 11 accuracy = 0.4531, loss = 1.2101
+Client 12 accuracy = 0.5000, loss = 2.6530
+Client 13 accuracy = 0.5000, loss = 2.6510
+Client 14 accuracy = 1.0000, loss = 2.5326
+
+Round: 86
+Client 1 accuracy = 0.9863, loss = 0.1324
+Client 2 accuracy = 0.9823, loss = 0.1700
+Client 3 accuracy = 0.9824, loss = 0.2086
+Client 4 accuracy = 0.5034, loss = 0.7014
+Client 5 accuracy = 0.5003, loss = 0.7283
+Client 6 accuracy = 0.4961, loss = 0.7108
+Client 7 accuracy = 0.5041, loss = 0.7090
+Client 8 accuracy = 0.5008, loss = 0.9336
+Client 9 accuracy = 0.4862, loss = 0.7721
+Client 10 accuracy = 0.4889, loss = 0.8338
+Client 11 accuracy = 0.4565, loss = 1.2004
+Client 12 accuracy = 0.5000, loss = 2.6530
+Client 13 accuracy = 0.5000, loss = 2.6510
+Client 14 accuracy = 1.0000, loss = 2.5321
+
+Round: 87
+Client 1 accuracy = 0.9873, loss = 0.1315
+Client 2 accuracy = 0.9822, loss = 0.1613
+Client 3 accuracy = 0.9829, loss = 0.1987
+Client 4 accuracy = 0.4972, loss = 0.7027
+Client 5 accuracy = 0.5017, loss = 0.7255
+Client 6 accuracy = 0.5023, loss = 0.7144
+Client 7 accuracy = 0.5039, loss = 0.7168
+Client 8 accuracy = 0.4970, loss = 0.9365
+Client 9 accuracy = 0.4936, loss = 0.8082
+Client 10 accuracy = 0.4952, loss = 0.8378
+Client 11 accuracy = 0.4539, loss = 1.2168
+Client 12 accuracy = 0.5000, loss = 2.6530
+Client 13 accuracy = 0.5000, loss = 2.6512
+Client 14 accuracy = 1.0000, loss = 2.5324
+
+Round: 88
+Client 1 accuracy = 0.9877, loss = 0.1261
+Client 2 accuracy = 0.9833, loss = 0.1644
+Client 3 accuracy = 0.9846, loss = 0.1874
+Client 4 accuracy = 0.5012, loss = 0.7118
+Client 5 accuracy = 0.5022, loss = 0.7186
+Client 6 accuracy = 0.4969, loss = 0.7146
+Client 7 accuracy = 0.4914, loss = 0.7079
+Client 8 accuracy = 0.5004, loss = 0.8876
+Client 9 accuracy = 0.4907, loss = 0.8105
+Client 10 accuracy = 0.4957, loss = 0.8314
+Client 11 accuracy = 0.4633, loss = 1.1777
+Client 12 accuracy = 0.5000, loss = 2.6532
+Client 13 accuracy = 0.5000, loss = 2.6513
+Client 14 accuracy = 1.0000, loss = 2.5329
+
+Round: 89
+Client 1 accuracy = 0.9882, loss = 0.1244
+Client 2 accuracy = 0.9820, loss = 0.1574
+Client 3 accuracy = 0.9823, loss = 0.1977
+Client 4 accuracy = 0.5047, loss = 0.7018
+Client 5 accuracy = 0.4990, loss = 0.7608
+Client 6 accuracy = 0.5064, loss = 0.7070
+Client 7 accuracy = 0.4932, loss = 0.7106
+Client 8 accuracy = 0.4962, loss = 0.8188
+Client 9 accuracy = 0.4836, loss = 0.8161
+Client 10 accuracy = 0.5071, loss = 0.8626
+Client 11 accuracy = 0.4573, loss = 1.2025
+Client 12 accuracy = 0.5000, loss = 2.6533
+Client 13 accuracy = 0.5000, loss = 2.6514
+Client 14 accuracy = 1.0000, loss = 2.5329
+
+Round: 90
+Client 1 accuracy = 0.9889, loss = 0.1168
+Client 2 accuracy = 0.9826, loss = 0.1787
+Client 3 accuracy = 0.9818, loss = 0.1947
+Client 4 accuracy = 0.4983, loss = 0.7048
+Client 5 accuracy = 0.5011, loss = 0.7649
+Client 6 accuracy = 0.5004, loss = 0.7112
+Client 7 accuracy = 0.5080, loss = 0.7083
+Client 8 accuracy = 0.5004, loss = 0.9323
+Client 9 accuracy = 0.4936, loss = 0.8010
+Client 10 accuracy = 0.5009, loss = 0.9024
+Client 11 accuracy = 0.4565, loss = 1.1982
+Client 12 accuracy = 0.5000, loss = 2.6534
+Client 13 accuracy = 0.5000, loss = 2.6514
+Client 14 accuracy = 1.0000, loss = 2.5330
+
+Round: 91
+Client 1 accuracy = 0.9874, loss = 0.1256
+Client 2 accuracy = 0.9831, loss = 0.1585
+Client 3 accuracy = 0.9817, loss = 0.2100
+Client 4 accuracy = 0.5008, loss = 0.7044
+Client 5 accuracy = 0.5082, loss = 0.7586
+Client 6 accuracy = 0.5000, loss = 0.7154
+Client 7 accuracy = 0.4921, loss = 0.7080
+Client 8 accuracy = 0.5000, loss = 0.9375
+Client 9 accuracy = 0.4929, loss = 0.7842
+Client 10 accuracy = 0.4860, loss = 0.8397
+Client 11 accuracy = 0.4556, loss = 1.1971
+Client 12 accuracy = 0.5000, loss = 2.6533
+Client 13 accuracy = 0.5000, loss = 2.6514
+Client 14 accuracy = 1.0000, loss = 2.5329
+
+Round: 92
+Client 1 accuracy = 0.9884, loss = 0.1188
+Client 2 accuracy = 0.9826, loss = 0.1609
+Client 3 accuracy = 0.9834, loss = 0.1797
+Client 4 accuracy = 0.5039, loss = 0.7074
+Client 5 accuracy = 0.5011, loss = 0.7419
+Client 6 accuracy = 0.5039, loss = 0.7092
+Client 7 accuracy = 0.5026, loss = 0.7100
+Client 8 accuracy = 0.4868, loss = 0.9268
+Client 9 accuracy = 0.4915, loss = 0.8063
+Client 10 accuracy = 0.4863, loss = 0.8556
+Client 11 accuracy = 0.4488, loss = 1.2078
+Client 12 accuracy = 0.5000, loss = 2.6534
+Client 13 accuracy = 0.5000, loss = 2.6515
+Client 14 accuracy = 1.0000, loss = 2.5331
+
+Round: 93
+Client 1 accuracy = 0.9866, loss = 0.1378
+Client 2 accuracy = 0.9821, loss = 0.1701
+Client 3 accuracy = 0.9833, loss = 0.1986
+Client 4 accuracy = 0.5068, loss = 0.7007
+Client 5 accuracy = 0.4937, loss = 0.7456
+Client 6 accuracy = 0.4994, loss = 0.7196
+Client 7 accuracy = 0.5054, loss = 0.7094
+Client 8 accuracy = 0.4841, loss = 0.9370
+Client 9 accuracy = 0.4917, loss = 0.8338
+Client 10 accuracy = 0.5034, loss = 0.8212
+Client 11 accuracy = 0.4539, loss = 1.2099
+Client 12 accuracy = 0.5000, loss = 2.6535
+Client 13 accuracy = 0.5000, loss = 2.6517
+Client 14 accuracy = 1.0000, loss = 2.5337
+
+Round: 94
+Client 1 accuracy = 0.9884, loss = 0.1153
+Client 2 accuracy = 0.9818, loss = 0.1654
+Client 3 accuracy = 0.9829, loss = 0.2008
+Client 4 accuracy = 0.4997, loss = 0.7010
+Client 5 accuracy = 0.5126, loss = 0.7356
+Client 6 accuracy = 0.4969, loss = 0.7172
+Client 7 accuracy = 0.5071, loss = 0.7145
+Client 8 accuracy = 0.5000, loss = 0.9295
+Client 9 accuracy = 0.4879, loss = 0.7730
+Client 10 accuracy = 0.4994, loss = 0.8349
+Client 11 accuracy = 0.4531, loss = 1.1763
+Client 12 accuracy = 0.5000, loss = 2.6535
+Client 13 accuracy = 0.5000, loss = 2.6518
+Client 14 accuracy = 1.0000, loss = 2.5341
+
+Round: 95
+Client 1 accuracy = 0.9863, loss = 0.1422
+Client 2 accuracy = 0.9819, loss = 0.1589
+Client 3 accuracy = 0.9840, loss = 0.1969
+Client 4 accuracy = 0.5120, loss = 0.6993
+Client 5 accuracy = 0.4952, loss = 0.7096
+Client 6 accuracy = 0.4980, loss = 0.7076
+Client 7 accuracy = 0.5063, loss = 0.7130
+Client 8 accuracy = 0.5000, loss = 0.9362
+Client 9 accuracy = 0.4995, loss = 0.7786
+Client 10 accuracy = 0.5020, loss = 0.8236
+Client 11 accuracy = 0.4573, loss = 1.2042
+Client 12 accuracy = 0.5000, loss = 2.6536
+Client 13 accuracy = 0.5000, loss = 2.6519
+Client 14 accuracy = 1.0000, loss = 2.5344
+
+Round: 96
+Client 1 accuracy = 0.9862, loss = 0.1400
+Client 2 accuracy = 0.9836, loss = 0.1559
+Client 3 accuracy = 0.9832, loss = 0.1777
+Client 4 accuracy = 0.4954, loss = 0.7046
+Client 5 accuracy = 0.4924, loss = 0.7168
+Client 6 accuracy = 0.5031, loss = 0.7131
+Client 7 accuracy = 0.5019, loss = 0.7060
+Client 8 accuracy = 0.5008, loss = 0.9394
+Client 9 accuracy = 0.5033, loss = 0.7584
+Client 10 accuracy = 0.5014, loss = 0.8492
+Client 11 accuracy = 0.4599, loss = 1.1990
+Client 12 accuracy = 0.5000, loss = 2.6536
+Client 13 accuracy = 0.5000, loss = 2.6519
+Client 14 accuracy = 1.0000, loss = 2.5344
+
+Round: 97
+Client 1 accuracy = 0.9858, loss = 0.1519
+Client 2 accuracy = 0.9837, loss = 0.1626
+Client 3 accuracy = 0.9803, loss = 0.2233
+Client 4 accuracy = 0.5091, loss = 0.7012
+Client 5 accuracy = 0.4927, loss = 0.7176
+Client 6 accuracy = 0.4908, loss = 0.7143
+Client 7 accuracy = 0.5098, loss = 0.7064
+Client 8 accuracy = 0.5057, loss = 0.8501
+Client 9 accuracy = 0.4938, loss = 0.8122
+Client 10 accuracy = 0.5006, loss = 0.8517
+Client 11 accuracy = 0.4573, loss = 1.2005
+Client 12 accuracy = 0.5000, loss = 2.6536
+Client 13 accuracy = 0.5000, loss = 2.6519
+Client 14 accuracy = 1.0000, loss = 2.5344
+
+Round: 98
+Client 1 accuracy = 0.9889, loss = 0.1179
+Client 2 accuracy = 0.9843, loss = 0.1554
+Client 3 accuracy = 0.9801, loss = 0.2149
+Client 4 accuracy = 0.4970, loss = 0.7066
+Client 5 accuracy = 0.5114, loss = 0.7268
+Client 6 accuracy = 0.5038, loss = 0.7152
+Client 7 accuracy = 0.5000, loss = 0.7095
+Client 8 accuracy = 0.5000, loss = 0.9362
+Client 9 accuracy = 0.5057, loss = 0.8070
+Client 10 accuracy = 0.5048, loss = 0.8256
+Client 11 accuracy = 0.4556, loss = 1.1906
+Client 12 accuracy = 0.5000, loss = 2.6536
+Client 13 accuracy = 0.5000, loss = 2.6519
+Client 14 accuracy = 1.0000, loss = 2.5342
+
+Round: 99
+Client 1 accuracy = 0.9871, loss = 0.1306
+Client 2 accuracy = 0.9809, loss = 0.1681
+Client 3 accuracy = 0.9841, loss = 0.1934
+Client 4 accuracy = 0.4989, loss = 0.7005
+Client 5 accuracy = 0.5023, loss = 0.7536
+Client 6 accuracy = 0.5061, loss = 0.7083
+Client 7 accuracy = 0.4959, loss = 0.7091
+Client 8 accuracy = 0.5000, loss = 0.9258
+Client 9 accuracy = 0.4969, loss = 0.8180
+Client 10 accuracy = 0.4894, loss = 0.8365
+Client 11 accuracy = 0.4548, loss = 1.2044
+Client 12 accuracy = 0.5000, loss = 2.6537
+Client 13 accuracy = 0.5000, loss = 2.6520
+Client 14 accuracy = 1.0000, loss = 2.5346
+
+Round: 100
+Client 1 accuracy = 0.9871, loss = 0.1331
+Client 2 accuracy = 0.9803, loss = 0.1827
+Client 3 accuracy = 0.9839, loss = 0.1937
+Client 4 accuracy = 0.4957, loss = 0.7017
+Client 5 accuracy = 0.5016, loss = 0.7435
+Client 6 accuracy = 0.4997, loss = 0.7158
+Client 7 accuracy = 0.5051, loss = 0.7060
+Client 8 accuracy = 0.4958, loss = 0.8889
+Client 9 accuracy = 0.4946, loss = 0.8006
+Client 10 accuracy = 0.4886, loss = 0.8584
+Client 11 accuracy = 0.4608, loss = 1.2039
+Client 12 accuracy = 0.5000, loss = 2.6537
+Client 13 accuracy = 0.5000, loss = 2.6521
+Client 14 accuracy = 1.0000, loss = 2.5349
+

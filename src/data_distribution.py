@@ -8,73 +8,132 @@ Updated for modular data distribution
 import load_data
 from collections import Counter
 import numpy as np
+import pandas as pd
 
 class DataDistribution:
-    def __init__(self, beta=0.5, alpha_min=0.5, alpha_max=1.0):
-        self.x_data, self.y_data, self.X_valid, self.y_valid, self.coefficient_weights, self.valid_dist = load_data.load_cicids_2017_new(is_iid = False, is_weighted = True, inverse = True)
-        self.coeff_weights_list = []
-        self.beta = beta
-        self.n = len(self.coefficient_weights)
-        self.alpha_min = alpha_min
-        self.alpha_max = alpha_max
+    def __init__(self, is_iid=False, is_weighted=True, inverse=True):
+        self.is_iid = is_iid
+        self.is_weighted = is_weighted
+        self.inverse = inverse
 
+        self.x_data, self.y_data, self.X_valid, self.y_valid, self.coefficient_weights, self.valid_dist = self.fetch_data_and_weights()
+
+    def fetch_data_and_weights(self):
+        if self.is_iid:
+            return self.load_cicids_2017_iid()
+        else:
+            return self.load_cicids_2017_non_iid()
+        
     def get_data(self):
         return self.x_data, self.y_data, self.X_valid, self.y_valid
+    
+    def get_initial_coefficient_weights(self):
+        return self.coefficient_weights
     
     def get_valid_dist(self):
         return self.valid_dist
 
-    def find_q_updated(self, client_accuracies, current_round):
-        if len(self.coefficient_weights) != 0:
-            if current_round == 1:
-                self.coeff_weights_list.append(self.coefficient_weights)
-                return self.coefficient_weights
+    def load_cicids_2017_non_iid(self):
+        X_combined, X_valid, y_combined, y_valid = load_data.load_cicids_2017()
+        
+        X_combined_df = pd.DataFrame(X_combined)
+        X_combined_df['Label'] = y_combined
+        
+        X_malicious = X_combined_df[X_combined_df['Label'] != 0]
+        X_benign = X_combined_df[X_combined_df['Label'] == 0]
+        
+        valid_dist = Counter(y_valid)
+
+        X_train_list = []
+        y_train_list = []
+        client_sample_counts = []
+
+        labels = X_malicious['Label'].unique()
+        
+        for index, label in enumerate(labels):
+            dataset_malicious = X_malicious[X_malicious['Label'] == label]
+            
+            num_malicious_samples = len(dataset_malicious)
+            dataset_benign = X_benign.sample(n=num_malicious_samples, random_state=42)
+            
+            dataset_joined = pd.concat([dataset_malicious, dataset_benign])
+            dataset_joined = dataset_joined.sample(frac=1, random_state=42)
+
+            X_train = dataset_joined.drop(columns=['Label']).to_numpy()
+            y_train = dataset_joined['Label'].to_numpy()
+            
+            X_train_list.append(X_train)
+            y_train_list.append(y_train)
+            
+            if self.is_weighted:
+                client_sample_counts.append(len(y_train))
             else:
-                return self.new_coeff_weights(client_accuracies, current_round)
+                client_sample_counts.append(1)
+
+        if self.is_weighted and self.inverse:
+            total_samples = sum(client_sample_counts)
+            
+            coefficient_weights = [total_samples / count for count in client_sample_counts]
+            # coefficient_weights = [alpha*(count / total_samples) + beta*(total_samples / count) for count in client_sample_counts]
+
+            total_coeff = sum(coefficient_weights)
+
+            coefficient_weights = [weight / total_coeff for weight in coefficient_weights]
         else:
-            self.find_q()
+            if self.is_weighted:
+                total_samples = sum(client_sample_counts)
+                
+                coefficient_weights = [count / total_samples for count in client_sample_counts]
+            else:
+                coefficient_weights = client_sample_counts
 
+        return X_train_list, y_train_list, X_valid, y_valid, coefficient_weights, valid_dist
 
-    def arw(self, current_accuracy, previous_accuracy, current_coeff_weight):
-        delta_accuracy = current_accuracy - previous_accuracy
+    def load_cicids_2017_iid(self):
+        X_combined, X_valid, y_combined, y_valid = load_data.load_cicids_2017()
         
-        alpha = 1 - self.beta * delta_accuracy
+        X_combined_df = pd.DataFrame(X_combined)
+        X_combined_df['Label'] = y_combined
+
+        valid_dist = Counter(y_valid)
         
-        alpha = np.clip(alpha, self.alpha_min, self.alpha_max)
+        X_combined_df = X_combined_df.sample(frac=1, random_state=42).reset_index(drop=True)
         
-        # Adjust the reparameterization weight
-        new_coeff_weight = current_coeff_weight * alpha
+        num_clients = 14
         
-        return new_coeff_weight
+        client_data = np.array_split(X_combined_df, num_clients)
+        
+        X_train_list = []
+        y_train_list = []
+        client_sample_counts = []
+        
+        for client_df in client_data:
+            X_train = client_df.drop(columns=['Label']).to_numpy()
+            y_train = client_df['Label'].to_numpy()
+            
+            X_train_list.append(X_train)
+            y_train_list.append(y_train)
+        
+            if self.is_weighted:
+                client_sample_counts.append(len(y_train))
+            else:
+                client_sample_counts.append(1)
 
+        if self.is_weighted and self.inverse:
+            total_samples = sum(client_sample_counts)
+            
+            coefficient_weights = [total_samples / count for count in client_sample_counts]
 
-    def new_coeff_weights(self, client_accuracies, current_round):
-        new_weights = []
-        for i in range(self.n):
-            new_weights.append(self.arw(client_accuracies[current_round-1][i], client_accuracies[current_round-2][i], self.coeff_weights_list[current_round-2][i]))
-        self.coeff_weights_list.append(new_weights)
-        return new_weights
+            total_coeff = sum(coefficient_weights)
 
-    def find_q(self):
-        p_all_node_list = []
-        # Here malicious nodes are 3,5,7
-        malicious_nodes = [3, 5, 7]
-        for index in range(len(self.y_data)):
-            counter_num = Counter(self.y_data[index])
-            total_sample = len(self.y_data[index])
-            try:
-                benign_sample = counter_num[0]
-            except:
-                p_all_node_list.append(0)
-                continue
-            malicious_sample = total_sample - benign_sample
-            p_node = malicious_sample / benign_sample
-            p_all_node_list.append(p_node)
+            coefficient_weights = [weight / total_coeff for weight in coefficient_weights]
 
-        q_all_list_node = self.softmax(p_all_node_list)
-        return q_all_list_node
+        else:
+            if self.is_weighted:
+                total_samples = sum(client_sample_counts)
+                
+                coefficient_weights = [count / total_samples for count in client_sample_counts]
+            else:
+                coefficient_weights = client_sample_counts
 
-    @staticmethod
-    def softmax(x):
-        e_x = np.exp(x - np.max(x))
-        return e_x / e_x.sum(axis=0)
+        return X_train_list, y_train_list, X_valid, y_valid, coefficient_weights, valid_dist

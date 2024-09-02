@@ -11,7 +11,6 @@ import models
 from src.client_training import Client, train_server_with_parallelization, train_server_without_parallelization
 from src.data_distribution import DataDistribution
 import matplotlib
-# matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
@@ -25,9 +24,12 @@ if __name__ == "__main__":
     lr = 0.01
     batch_size = 64
     rounds = 100
-    use_parallel = True
+    use_parallel = False
 
     start_time = time.time()
+
+    with open("client_logs.txt", "w") as file:
+        file.write("")
 
     print("...Loading data distribution at client side")
     data_distribution = DataDistribution()

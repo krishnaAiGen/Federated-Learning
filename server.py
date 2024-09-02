@@ -10,6 +10,7 @@ import os
 from src.server_utils import initialize_global_model, weights_to_list, list_to_weights, evaluate_global_model
 from src.data_distribution import DataDistribution
 from src.averaging_models import AveragingModels
+from src.get_coefficient_weights import get_coefficients
 import numpy as np 
 import matplotlib.pyplot as plt
 from src.plotting import plotter1, plotter2, plotter3
@@ -21,8 +22,9 @@ app = Flask(__name__)
 print("......Intializing global model")
 global_model, global_weights = initialize_global_model()
 print("......Loading data distribution")
-data_distribution = DataDistribution()
-x_data, y_data, X_valid, y_valid = data_distribution.get_data()
+
+data_distribution = DataDistribution(is_iid=False, is_weighted=True, inverse=True)
+_, _, X_valid, y_valid = data_distribution.get_data()
 valid_dist = data_distribution.get_valid_dist()
 current_round = 0
 
@@ -32,6 +34,11 @@ recall_per_class_over_rounds = []
 f1_per_class_over_rounds = []
 round_numbers = []
 client_accuracies = []
+
+coeff_weights_list = []
+
+with open("server_logs.txt", "w") as file:
+    file.write("")
 
 @app.route('/init', methods=['GET'])
 def init_model():
@@ -48,14 +55,29 @@ def update_weights():
 
     client_weights = [list_to_weights(w) for w in request.json['weights']]
     client_accuracies.append(request.json['client_accuracy'])
-    q_all_list_node = data_distribution.find_q_updated(client_accuracies, current_round)
-    avg_weights = AveragingModels.model_average_q1(client_weights, q_all_list_node)
+    
+    if current_round == 1:
+        coefficient_weights = data_distribution.get_initial_coefficient_weights()
+    else:
+        coefficient_weights = get_coefficients(coeff_weights_list, client_accuracies, current_round)
+
+    coeff_weights_list.append(coefficient_weights)
+
+    with open("server_logs.txt", "a") as file:
+        file.write(f"Round: {current_round}\n")
+        file.write(str(coefficient_weights)+"\n")
+
+    avg_weights = AveragingModels.model_weighted_average(client_weights, coefficient_weights)
     
     global_weights = avg_weights
     
     # Evaluate model
     loss, accuracy, accuracy_per_class, precision_per_class, recall_per_class, f1_per_class = evaluate_global_model(global_model, global_weights, X_valid, y_valid)
     
+    with open("server_logs.txt", "a") as file:
+        file.write(f"accuracy= {accuracy}, loss = {loss}\n")
+        file.write(f"accuracy_per_class: {str(accuracy_per_class)}\n\n")
+
     accuracy_per_class_over_rounds.append(accuracy_per_class)
     precision_per_class_over_rounds.append(precision_per_class)
     recall_per_class_over_rounds.append(recall_per_class)

@@ -20,7 +20,7 @@ os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 tf.get_logger().setLevel('ERROR')
 
 if __name__ == "__main__":
-    epochs = 2
+    epochs = 5
     lr = 0.01
     batch_size = 64
     rounds = 100

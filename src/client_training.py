@@ -51,6 +51,8 @@ def train_server_without_parallelization(rounds, clients, global_weights, server
         with open("client_logs.txt", "a") as file:
             file.write("\n")
 
+        print("average client accuracy: ", np.average(client_accuracies))
+
         client_weights_list = [[w.tolist() for w in client] for client in client_weights]
         response = requests.post(f'{server_url}/update_weights', json={'weights': client_weights_list, 'client_accuracy': client_accuracies})
 

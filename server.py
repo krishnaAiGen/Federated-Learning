@@ -61,13 +61,15 @@ def update_weights():
     else:
         coefficient_weights = get_coefficients(coeff_weights_list, client_accuracies, current_round)
 
+    print("\n\n", coefficient_weights)
     coeff_weights_list.append(coefficient_weights)
 
     with open("server_logs.txt", "a") as file:
         file.write(f"Round: {current_round}\n")
         file.write(str(coefficient_weights)+"\n")
 
-    avg_weights = AveragingModels.model_weighted_average(client_weights, coefficient_weights)
+    # avg_weights = AveragingModels.model_weighted_average(client_weights, coefficient_weights)
+    avg_weights = AveragingModels.model_average_q0(client_weights)
     
     global_weights = avg_weights
     

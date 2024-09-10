@@ -29,10 +29,23 @@ def find_q():
 
 
 def get_coefficients(coeff_weights_list, client_accuracies, current_round):
+    expo = True
     n = len(coeff_weights_list[0])
-    coeff_weights = new_coeff_weights(n, client_accuracies, current_round, coeff_weights_list)
+    if expo == False:
+        coeff_weights = new_coeff_weights(n, client_accuracies, current_round, coeff_weights_list)
     
-    return coeff_weights
+    if expo == True:
+        coeff_weights = new_coeff_weights_expo(n, client_accuracies, current_round, coeff_weights_list)
+
+    # scaler = MinMaxScaler()
+    coeff_weights = np.array(coeff_weights)
+    # coeff_weights = coeff_weights.reshape(-1, 1)
+    # coeff_weights = scaler.fit_transform(coeff_weights)
+    
+    coeff_weights_norm = coeff_weights / coeff_weights.sum()
+
+    return coeff_weights_norm
+
 
 
 def sigmoid(delta_A, beta=1):
@@ -52,6 +65,7 @@ def adaptive_reparam1(current_accuracy, previous_accuracy, current_coeff_weight,
     
     # alpha = np.clip(alpha1, alpha_min, alpha_max)
 
+    
     # alpha = exponential_decay(delta_accuracy)
     alpha = sigmoid(delta_accuracy)
 
@@ -72,4 +86,33 @@ def new_coeff_weights(n, client_accuracies, current_round, coeff_weights_list):
         # print(res)
         new_weights.append(res)
 
+    return new_weights
+
+
+def adaptive_reparam1_expo(current_accuracy, previous_accuracy, current_coeff_weight):
+    TRESHOLD = 0.90
+    # lambda1 = -2
+    # delta_accuracy = current_accuracy - TRESHOLD
+    # exponent = -(lambda1 * delta_accuracy)
+    # print("--------")
+    # print(current_accuracy)
+    # print(exponent)
+    # print(pow(2, exponent))
+    # new_coeff_weight = current_coeff_weight * pow(2, exponent)
+    
+    # print("calculation happening here")
+    # print("old, new coefficient", current_coeff_weight, new_coeff_weight)
+    # print("--------")
+
+    print(abs(TRESHOLD - current_accuracy))
+    return abs(TRESHOLD - current_accuracy)
+
+def new_coeff_weights_expo(n, client_accuracies, current_round, coeff_weights_list):
+    new_weights = []
+    
+    for i in range(n):
+        res = adaptive_reparam1_expo(client_accuracies[current_round-1][i], client_accuracies[current_round-2][i], coeff_weights_list[current_round-2][i])
+
+        new_weights.append(res)
+    
     return new_weights

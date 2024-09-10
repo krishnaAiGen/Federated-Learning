@@ -35,13 +35,27 @@ def get_coefficients(coeff_weights_list, client_accuracies, current_round):
     return coeff_weights
 
 
+def sigmoid(delta_A, beta=1):
+    return 1 / (1 + np.exp(-beta * delta_A))
+
+
+def exponential_decay(delta_A, beta=1):
+    return np.exp(-beta * delta_A)
+
 def adaptive_reparam1(current_accuracy, previous_accuracy, current_coeff_weight, beta=0.5, alpha_min=0.5, alpha_max=1.0):
-    delta_accuracy = current_accuracy - previous_accuracy
+    th_accuracy = 0.9
+    delta_accuracy = abs(th_accuracy - previous_accuracy)
+    # delta_accuracy = current_accuracy - previous_accuracy
     # print(f"{current_accuracy:.4f}, {previous_accuracy:.4f}")
     
-    alpha1 = 1 - beta * delta_accuracy
+    # alpha1 = 1 - beta * delta_accuracy
     
-    alpha = np.clip(alpha1, alpha_min, alpha_max)
+    # alpha = np.clip(alpha1, alpha_min, alpha_max)
+
+    # alpha = exponential_decay(delta_accuracy)
+    alpha = sigmoid(delta_accuracy)
+
+    alpha1 = alpha
 
     # Adjust the reparameterization weight
     new_coeff_weight = current_coeff_weight * alpha

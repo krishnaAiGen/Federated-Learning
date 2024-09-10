@@ -99,6 +99,44 @@ def stratified_split(X_combined, y_combined, test_size=0.1):
     return X_train, X_valid, y_train, y_valid
 
 
+import numpy as np
+
+def percentage_imbalance(X_combined, y_combined, p=0.5, num_clients=14):
+    # Number of imbalance clients
+    imbalance_clients = int(p * num_clients)
+
+    # Count unique labels and their occurrences in y_combined
+    unique_labels, label_counts = np.unique(y_combined, return_counts=True)
+
+    # Get the least frequent labels
+    least_frequent_indices = np.argsort(label_counts)[:imbalance_clients]
+    least_frequent_labels = unique_labels[least_frequent_indices]
+
+    # Create imbalanced dataset
+    X_imbalanced = []
+    y_imbalanced = []
+
+    for label in least_frequent_labels:
+        label_indices = np.where(y_combined == label)[0]
+        n_samples = min(35, len(label_indices))
+        
+        # Take only 'n_samples' from the least frequent labels
+        selected_indices = label_indices[:n_samples]
+        X_imbalanced.append(X_combined[selected_indices])
+        y_imbalanced.append(y_combined[selected_indices])
+
+    # Append unaffected samples (those from labels not part of least frequent clients)
+    unaffected_indices = np.isin(y_combined, least_frequent_labels, invert=True)
+    X_imbalanced.append(X_combined[unaffected_indices])
+    y_imbalanced.append(y_combined[unaffected_indices])
+    
+    # Concatenate the lists back into numpy arrays
+    X_imbalanced = np.vstack(X_imbalanced)
+    y_imbalanced = np.hstack(y_imbalanced)
+    
+    return X_imbalanced, y_imbalanced
+
+
 """
 This function loads data where normal attack and malicious attack
 are mixed together and distributed in all the node
@@ -113,6 +151,10 @@ def load_cicids_2017():
     y_combined = np.concatenate([y_train, y_valid])
 
     X_combined, y_combined = sample_data(X_combined, y_combined, benign_label=0, sample_size=10000)
+
+    X_combined, y_combined = percentage_imbalance(X_combined, y_combined, p = 0.5, num_clients = 14)
+
+
 
     X_train, X_valid, y_train, y_valid = stratified_split(X_combined, y_combined, test_size=0.1)
 

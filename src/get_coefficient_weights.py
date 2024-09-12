@@ -29,7 +29,7 @@ def find_q():
 
 
 def get_coefficients(coeff_weights_list, client_accuracies, current_round):
-    expo = True
+    expo = False
     n = len(coeff_weights_list[0])
     if expo == False:
         coeff_weights = new_coeff_weights(n, client_accuracies, current_round, coeff_weights_list)
@@ -52,12 +52,12 @@ def sigmoid(delta_A, beta=1):
     return 1 / (1 + np.exp(-beta * delta_A))
 
 
-def exponential_decay(delta_A, beta=1):
+def exponential_decay(delta_A, beta=-1):
     return np.exp(-beta * delta_A)
 
 def adaptive_reparam1(current_accuracy, previous_accuracy, current_coeff_weight, beta=0.5, alpha_min=0.5, alpha_max=1.0):
     th_accuracy = 0.9
-    delta_accuracy = abs(th_accuracy - previous_accuracy)
+    delta_accuracy = abs(th_accuracy - current_accuracy)
     # delta_accuracy = current_accuracy - previous_accuracy
     # print(f"{current_accuracy:.4f}, {previous_accuracy:.4f}")
     
@@ -66,25 +66,46 @@ def adaptive_reparam1(current_accuracy, previous_accuracy, current_coeff_weight,
     # alpha = np.clip(alpha1, alpha_min, alpha_max)
 
     
-    # alpha = exponential_decay(delta_accuracy)
-    alpha = sigmoid(delta_accuracy)
+    alpha = exponential_decay(delta_accuracy)
+    # alpha = sigmoid(delta_accuracy)
+    # alpha = delta_accuracy*delta_accuracy
 
     alpha1 = alpha
 
-    # Adjust the reparameterization weight
-    new_coeff_weight = current_coeff_weight * alpha
+    # epsilon = 0.01
+    # alpha += epsilon
 
-    return new_coeff_weight, alpha1, alpha, delta_accuracy
+    # Adjust the reparameterization weight
+    # new_coeff_weight = current_coeff_weight * alpha
+    new_coeff_weight = alpha
+
+    return new_coeff_weight, alpha1, alpha, delta_accuracy, current_accuracy
 
 
 def new_coeff_weights(n, client_accuracies, current_round, coeff_weights_list):
     new_weights = []
+    del_acc_list = []
 
     for i in range(n):
-        res, alpha1, alpha, delta_accuracy = adaptive_reparam1(client_accuracies[current_round-1][i], client_accuracies[current_round-2][i], coeff_weights_list[current_round-2][i])
+        # res, alpha1, alpha, delta_accuracy = adaptive_reparam1(client_accuracies[current_round-1][i], client_accuracies[current_round-2][i], coeff_weights_list[current_round-2][i])
+        res, alpha1, alpha, delta_accuracy, current_accuracy = adaptive_reparam1(client_accuracies[current_round-1][i], client_accuracies[current_round-2][i], coeff_weights_list[0][i])
         # print(f"{alpha1:.4f}, {alpha:.4f}, {delta_accuracy:.4f}")
         # print(res)
+        del_acc_list.append([current_accuracy, delta_accuracy])
         new_weights.append(res)
+
+    print("acc, del:")
+    print(del_acc_list)
+
+    print("Without Normalisation: ")
+    print(new_weights)
+    total = sum(new_weights)
+    print(total)
+    new_weights = [num/total for num in new_weights]
+    total = sum(new_weights)
+    print(total)
+    print("With Normalisation: ")
+    print(new_weights)
 
     return new_weights
 

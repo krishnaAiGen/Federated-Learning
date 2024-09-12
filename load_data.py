@@ -103,7 +103,7 @@ import numpy as np
 
 def percentage_imbalance(X_combined, y_combined, p=0.5, num_clients=14):
     # Number of imbalance clients
-    imbalance_clients = int(p * num_clients)
+    imbalance_clients = round(p * num_clients)
 
     # Count unique labels and their occurrences in y_combined
     unique_labels, label_counts = np.unique(y_combined, return_counts=True)
@@ -152,7 +152,7 @@ def load_cicids_2017():
 
     X_combined, y_combined = sample_data(X_combined, y_combined, benign_label=0, sample_size=10000)
 
-    X_combined, y_combined = percentage_imbalance(X_combined, y_combined, p = 0.5, num_clients = 14)
+    X_combined, y_combined = percentage_imbalance(X_combined, y_combined, p = 0.2, num_clients = 14)
 
 
 

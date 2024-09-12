@@ -63,6 +63,8 @@ def update_weights():
 
     coeff_weights_list.append(coefficient_weights)
 
+    print(coefficient_weights)
+
     with open("server_logs.txt", "a") as file:
         file.write(f"Round: {current_round}\n")
         file.write(str(coefficient_weights)+"\n")

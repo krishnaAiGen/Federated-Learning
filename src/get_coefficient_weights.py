@@ -29,7 +29,7 @@ def find_q():
 
 
 def get_coefficients(coeff_weights_list, client_accuracies, current_round):
-    expo = False
+    expo = True
     n = len(coeff_weights_list[0])
     if expo == False:
         coeff_weights = new_coeff_weights(n, client_accuracies, current_round, coeff_weights_list)
@@ -66,8 +66,8 @@ def adaptive_reparam1(current_accuracy, previous_accuracy, current_coeff_weight,
     # alpha = np.clip(alpha1, alpha_min, alpha_max)
 
     
-    alpha = exponential_decay(delta_accuracy)
-    # alpha = sigmoid(delta_accuracy)
+    # alpha = exponential_decay(delta_accuracy)
+    alpha = sigmoid(delta_accuracy)
     # alpha = delta_accuracy*delta_accuracy
 
     alpha1 = alpha

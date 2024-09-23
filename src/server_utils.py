@@ -29,4 +29,4 @@ def evaluate_global_model(global_model, global_weights, X_valid, y_valid):
     recall_per_class = recall_score(y_valid, y_pred, average=None)
     f1_per_class = f1_score(y_valid, y_pred, average=None)
 
-    return loss, accuracy, accuracy_per_class, precision_per_class, recall_per_class, f1_per_class
+    return loss, accuracy, accuracy_per_class, precision_per_class, recall_per_class, f1_per_class, cm

@@ -142,7 +142,7 @@ This function loads data where normal attack and malicious attack
 are mixed together and distributed in all the node
 """
 
-def load_cicids_2017():
+def load_cicids_2017(k):
     # Load the data
     X_train, X_valid, y_train, y_valid = retreive_data()
 
@@ -152,13 +152,17 @@ def load_cicids_2017():
 
     X_combined, y_combined = sample_data(X_combined, y_combined, benign_label=0, sample_size=10000)
 
-    X_combined, y_combined = percentage_imbalance(X_combined, y_combined, p = 0.2, num_clients = 14)
+    X_combined, y_combined = percentage_imbalance(X_combined, y_combined, p = 0, num_clients = 14)
 
 
 
     X_train, X_valid, y_train, y_valid = stratified_split(X_combined, y_combined, test_size=0.1)
 
-    return X_train, X_valid, y_train, y_valid
+    dist_y = Counter(y_train)
+
+    smallest_k_ids = sorted(dist_y, key=dist_y.get)[:k]
+
+    return X_train, X_valid, y_train, y_valid, smallest_k_ids
 
 
 """

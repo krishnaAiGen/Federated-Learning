@@ -25,6 +25,7 @@ class Client:
 def train_server_without_parallelization(rounds, clients, global_weights, server_url):
     training_accuracy = []
     loss_list = []
+    client_accuracy_list = []
 
     for round in range(1, rounds + 1):
         print(f"Training round {round}")
@@ -51,6 +52,8 @@ def train_server_without_parallelization(rounds, clients, global_weights, server
         with open("client_logs.txt", "a") as file:
             file.write("\n")
 
+        client_accuracy_list.append(client_accuracies)
+
         client_weights_list = [[w.tolist() for w in client] for client in client_weights]
         response = requests.post(f'{server_url}/update_weights', json={'weights': client_weights_list, 'client_accuracy': client_accuracies})
 
@@ -62,7 +65,7 @@ def train_server_without_parallelization(rounds, clients, global_weights, server
         training_accuracy.append(updated_global['accuracy'])
         loss_list.append(updated_global['loss'])
 
-    return training_accuracy, loss_list
+    return training_accuracy, loss_list, client_accuracy_list
 
 def train_server_with_parallelization(rounds, clients, global_weights, server_url):
     training_accuracy = []

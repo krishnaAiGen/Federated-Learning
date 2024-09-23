@@ -14,19 +14,19 @@ def plot_loss(rounds, loss1, loss_fed_avg, use_parallel):
     plt.legend()
     plt.savefig('federated_loss_plot.png')
 
-def plotter1(dir_path):
+def plotter1(dir_path, experiment_name):
     # Load the saved metrics
-    accuracy_per_class_over_rounds = np.load(os.path.join(dir_path, "accuracy_per_class_over_rounds.npy"))
-    precision_per_class_over_rounds = np.load(os.path.join(dir_path, "precision_per_class_over_rounds.npy"))
-    recall_per_class_over_rounds = np.load(os.path.join(dir_path, "recall_per_class_over_rounds.npy"))
-    f1_per_class_over_rounds = np.load(os.path.join(dir_path, "f1_per_class_over_rounds.npy"))
-    round_numbers = np.load(os.path.join(dir_path, "round_numbers.npy"))
+    accuracy_per_class_over_rounds = np.load(os.path.join(dir_path, f"{experiment_name}/npy results/accuracy_per_class_over_rounds.npy"))
+    precision_per_class_over_rounds = np.load(os.path.join(dir_path, f"{experiment_name}/npy results/precision_per_class_over_rounds.npy"))
+    recall_per_class_over_rounds = np.load(os.path.join(dir_path, f"{experiment_name}/npy results/recall_per_class_over_rounds.npy"))
+    f1_per_class_over_rounds = np.load(os.path.join(dir_path, f"{experiment_name}/npy results/f1_per_class_over_rounds.npy"))
+    round_numbers = np.load(os.path.join(dir_path, f"{experiment_name}/npy results/round_numbers.npy"))
 
     # Determine the number of classes
     num_classes = accuracy_per_class_over_rounds.shape[1]
 
     # Create a directory to save the images
-    output_dir = "metrics_plots"
+    output_dir = f"{experiment_name}/metrics_plots"
     os.makedirs(output_dir, exist_ok=True)
 
     # Plot the metrics for each class and save the plots
@@ -53,19 +53,19 @@ def plotter1(dir_path):
         plt.savefig(output_path)
         
         # Show the plot
-        plt.show()
+        # plt.show()
 
 
-def plotter2(dir_path):
+def plotter2(dir_path, experiment_name):
     # Load the saved metrics
-    accuracy_per_class_over_rounds = np.load(os.path.join(dir_path, "accuracy_per_class_over_rounds.npy"))
-    round_numbers = np.load(os.path.join(dir_path, "round_numbers.npy"))
+    accuracy_per_class_over_rounds = np.load(os.path.join(dir_path, f"{experiment_name}/npy results/accuracy_per_class_over_rounds.npy"))
+    round_numbers = np.load(os.path.join(dir_path, f"{experiment_name}/npy results/round_numbers.npy"))
 
     # Determine the number of classes
     num_classes = accuracy_per_class_over_rounds.shape[1]
 
     # Create a directory to save the images
-    output_dir = "metrics_plots"
+    output_dir = f"{experiment_name}/metrics_plots"
     os.makedirs(output_dir, exist_ok=True)
 
     # Plot the metrics for each class and save the plots
@@ -86,11 +86,11 @@ def plotter2(dir_path):
         plt.savefig(output_path)
         
         # Show the plot
-        plt.show()
+        # plt.show()
 
-def plotter3(dir_path, valid_dist):
+def plotter3(dir_path, valid_dist, experiment_name):
     # Load the accuracy per class over rounds
-    accuracy_per_class_over_rounds = np.load(os.path.join(dir_path, "accuracy_per_class_over_rounds.npy"))
+    accuracy_per_class_over_rounds = np.load(os.path.join(dir_path, f"{experiment_name}/npy results/accuracy_per_class_over_rounds.npy"))
 
     # Class distribution from the Counter
     class_distribution = dict(valid_dist)
@@ -113,7 +113,7 @@ def plotter3(dir_path, valid_dist):
     # Convert to numpy array for easier plotting
     avg_weighted_accuracies = np.array(avg_weighted_accuracies)
 
-    output_dir = "metrics_plots"
+    output_dir = f"{experiment_name}/metrics_plots"
     os.makedirs(output_dir, exist_ok=True)
 
     # Plot the average weighted accuracies over rounds
@@ -128,4 +128,55 @@ def plotter3(dir_path, valid_dist):
     output_path = os.path.join(output_dir, f'overall_accuracy.png')
     plt.savefig(output_path)
 
-    plt.show()
+    # plt.show()
+
+def plotter4(dir_path, smallest_k_ids, experiment_name):
+    # Load the confusion matrices
+    confusion_matrices = np.load(os.path.join(dir_path, f"{experiment_name}/npy results/confusion_matrices.npy"))
+
+    # Indices for specific classes you are interested in
+    specific_classes = smallest_k_ids
+
+    # Initialize lists to store accuracies
+    average_accuracies = []
+    average_specific_class_accuracies = []
+
+    # Calculate accuracies
+    for cm in confusion_matrices:
+        # Overall average accuracy
+        overall_accuracy = np.trace(cm) / np.sum(cm)
+        average_accuracies.append(overall_accuracy)
+
+        # Accuracies for specific classes
+        numerator = 0
+        denominator = 0
+        
+        for cls in specific_classes:
+            numerator += cm[cls, cls]
+            denominator += np.sum(cm[cls, :])
+        
+        # Calculate the average accuracy for specific classes for this round
+        average_accuracy_this_round = numerator / denominator if denominator != 0 else 0
+        average_specific_class_accuracies.append(average_accuracy_this_round)
+
+    # Rounds (assuming one matrix per round)
+    rounds = list(range(1, len(confusion_matrices) + 1))
+
+    # Plot the results
+    plt.figure(figsize=(12, 8))
+    plt.plot(rounds, average_accuracies, label='Average Accuracy Over All Classes', marker='o', linestyle='-', color='blue')
+    plt.plot(rounds, average_specific_class_accuracies, label=f'Average Accuracy of Specific Classes {str(smallest_k_ids)}', marker='x', linestyle='--', color='red')
+    plt.xlabel('Rounds')
+    plt.ylabel('Accuracy')
+    plt.title('Comparison of Average Accuracies Over Rounds')
+    plt.legend()
+    plt.grid(True)
+
+    output_dir = f"{experiment_name}/metrics_plots"
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Save the figure
+    output_path = os.path.join(output_dir, f'last_k_comparision.png')
+    plt.savefig(output_path)
+
+    # plt.show()

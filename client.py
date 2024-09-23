@@ -23,7 +23,7 @@ if __name__ == "__main__":
     epochs = 2
     lr = 0.01
     batch_size = 64
-    rounds = 100
+    rounds = 3
     use_parallel = False
 
     start_time = time.time()
@@ -33,7 +33,8 @@ if __name__ == "__main__":
 
     print("...Loading data distribution at client side")
     data_distribution = DataDistribution()
-    x_data, y_data, _, _ = data_distribution.get_data()
+    x_data, y_data, smallest_k_ids, _, _ = data_distribution.get_data()
+
     num_clients = len(y_data)
     clients = [Client(x_data[i], y_data[i], epoch_number=epochs, learning_rate=lr, batch=batch_size) for i in range(num_clients)]
 
@@ -48,7 +49,8 @@ if __name__ == "__main__":
         np.save('./loss & weights/loss_cicids_fedq_parallel.npy', np.array(loss_list))
     else:
         print("Training without parallelization")
-        training_accuracy, loss_list = train_server_without_parallelization(rounds, clients, global_weights, 'http://127.0.0.1:5000')
+        training_accuracy, loss_list, client_accuracy_list = train_server_without_parallelization(rounds, clients, global_weights, 'http://127.0.0.1:5000')
+        
         np.save('./accuracy/accuracy_cicids_fedq.npy', np.array(training_accuracy))
         np.save('./loss & weights/loss_cicids_fedq.npy', np.array(loss_list))
 

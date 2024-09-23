@@ -125,7 +125,7 @@ def adaptive_reparam1_expo(current_accuracy, previous_accuracy, current_coeff_we
     # print("old, new coefficient", current_coeff_weight, new_coeff_weight)
     # print("--------")
 
-    print(abs(TRESHOLD - current_accuracy))
+    # print(abs(TRESHOLD - current_accuracy))
     return abs(TRESHOLD - current_accuracy)
 
 def new_coeff_weights_expo(n, client_accuracies, current_round, coeff_weights_list):

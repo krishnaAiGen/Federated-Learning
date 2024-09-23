@@ -38,6 +38,32 @@ confusion_matrix_list = []
 
 coeff_weights_list = []
 
+
+import numpy as np
+
+def filter_dataset_by_label(x_valid, y_valid, desired_labels):
+
+    # Ensure desired_labels is a list for consistency
+    if isinstance(desired_labels, int):
+        desired_labels = [desired_labels]
+
+    # Find indices where y_valid matches the desired label(s)
+    indices = np.isin(y_valid, desired_labels)
+
+    # Filter x_valid and y_valid based on the indices
+    new_x_valid = x_valid[indices]
+    new_y_valid = y_valid[indices]
+
+    return new_x_valid, new_y_valid
+
+
+client_valid_data = []
+
+for id in smallest_k_ids:
+    filtered_x, filtered_y = filter_dataset_by_label(X_valid, y_valid, id)
+    client_valid_data.append([filtered_x, filtered_y])
+
+
 with open("server_logs.txt", "w") as file:
     file.write("")
 
@@ -75,6 +101,21 @@ def update_weights():
     avg_weights = AveragingModels.model_weighted_average(client_weights, coefficient_weights)
     
     global_weights = avg_weights
+
+    with open("underrepresented_client_logs.txt", "a") as file:
+            file.write(f"Round: {current_round}\n")
+
+    for h in range(len(smallest_k_ids)):
+        client_id = 13-h
+        filtered_x, filtered_y = client_valid_data[h]
+        loss, accuracy, accuracy_per_class, precision_per_class, recall_per_class, f1_per_class, confusion_matrix = evaluate_global_model(global_model, client_weights[client_id], filtered_x, filtered_y)
+        with open("underrepresented_client_logs.txt", "a") as file:
+            file.write(f"Client: {client_id}\n")
+            file.write(f"loss: {loss}\n")
+            file.write(f"accuracy: {accuracy}\n")
+
+    with open("underrepresented_client_logs.txt", "a") as file:
+        file.write("\n")
     
     # Evaluate model
     loss, accuracy, accuracy_per_class, precision_per_class, recall_per_class, f1_per_class, confusion_matrix = evaluate_global_model(global_model, global_weights, X_valid, y_valid)

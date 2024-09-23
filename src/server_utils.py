@@ -10,6 +10,10 @@ def initialize_global_model():
 def weights_to_list(weights):
     return [w.tolist() for w in weights]
 
+# def weights_to_list(weights):
+#     return [w.numpy().tolist() for w in weights]
+
+
 def list_to_weights(weights_list):
     return [np.array(w) for w in weights_list]
 

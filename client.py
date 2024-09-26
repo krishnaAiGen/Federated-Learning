@@ -15,15 +15,15 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 # Suppress TensorFlow logging
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
-tf.get_logger().setLevel('ERROR')
+# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+# os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+# tf.get_logger().setLevel('ERROR')
 
 if __name__ == "__main__":
     epochs = 2
     lr = 0.01
     batch_size = 64
-    rounds = 3
+    rounds = 100
     use_parallel = False
 
     start_time = time.time()

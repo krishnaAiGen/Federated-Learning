@@ -180,3 +180,20 @@ def plotter4(dir_path, smallest_k_ids, experiment_name):
     plt.savefig(output_path)
 
     # plt.show()
+
+def plotter5(list1, list2):
+
+    # Create a plot
+    plt.figure()
+    plt.plot(list1, list2, marker='o', linestyle='-', color='b')  # Plot with markers and lines
+
+    # Add labels and title
+    plt.xlabel("X-axis Label")
+    plt.ylabel("Y-axis Label")
+    plt.title("X vs Y Plot")
+
+    # Save the plot as an image file
+    plt.savefig("divergence_plot.png", format="png", dpi=300)
+
+    # Show the plot
+    # plt.show()

@@ -85,7 +85,7 @@ class DataDistribution:
                 
                 coefficient_weights = [count / total_samples for count in client_sample_counts]
             else:
-                coefficient_weights = client_sample_counts
+                coefficient_weights = [1/len(client_sample_counts) for cnt in client_sample_counts]
 
         return X_train_list, y_train_list, X_valid, y_valid, coefficient_weights, valid_dist, smallest_k_ids
 
@@ -134,6 +134,6 @@ class DataDistribution:
                 
                 coefficient_weights = [count / total_samples for count in client_sample_counts]
             else:
-                coefficient_weights = client_sample_counts
+                coefficient_weights = [1/len(client_sample_counts) for cnt in client_sample_counts]
 
         return X_train_list, y_train_list, X_valid, y_valid, coefficient_weights, valid_dist, smallest_k_ids

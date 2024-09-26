@@ -87,12 +87,15 @@ def train_model(dataset_x, dataset_y, rounds, initial_weights):
         f1_per_class_over_rounds.append(f1_per_class)
         round_numbers.append(round)
 
+        if round == rounds:
+            np.savez('centrailsed_weights', *weights)
+
     return training_accuracy, loss_list
 
 
 global_model = models.get_cicids_model()
 global_weights = global_model.get_weights()
-rounds = 100
+rounds = 3
 
 # Train the model
 training_accuracy, loss_list = train_model(X_train, y_train, rounds, global_weights)

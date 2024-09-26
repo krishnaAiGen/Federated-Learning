@@ -4,6 +4,7 @@
 Updated for Flask framework implementation
 """
 from flask import Flask, request, jsonify
+import tensorflow as tf
 import numpy as np
 import os
 from src.server_utils import initialize_global_model, weights_to_list, list_to_weights, evaluate_global_model
@@ -12,18 +13,32 @@ from src.averaging_models import AveragingModels
 from src.get_coefficient_weights import get_coefficients
 import numpy as np 
 import matplotlib.pyplot as plt
-from src.plotting import plotter1, plotter2, plotter3, plotter4
+from src.plotting import *
 from collections import Counter
+from src.calculate_divergence import *
+
+
+reparam_methods = ["fedavg", "static", "adaptive"]
+option = 2
+reparam_method = reparam_methods[option]
 
 
 app = Flask(__name__)
 
 # Initialize global model and data distribution
 print("......Intializing global model")
-global_model, global_weights = initialize_global_model()
+global_model, global_weights = initialize_global_model(initialise_new=True, save=True)
 print("......Loading data distribution")
 
-data_distribution = DataDistribution(is_iid=False, is_weighted=True, inverse=False, k = 3)
+last_k = 3
+
+if reparam_method == "adaptive":
+    data_distribution = DataDistribution(is_iid=False, is_weighted=True, inverse=True, k = last_k)
+elif reparam_method == "static":
+    data_distribution = DataDistribution(is_iid=False, is_weighted=True, inverse=True, k = last_k)
+elif reparam_method == "fedavg":
+    data_distribution = DataDistribution(is_iid=False, is_weighted=True, inverse=False, k = last_k)
+
 _, _, smallest_k_ids, X_valid, y_valid = data_distribution.get_data()
 valid_dist = data_distribution.get_valid_dist()
 current_round = 0
@@ -36,10 +51,11 @@ round_numbers = []
 client_accuracies = []
 confusion_matrix_list = []
 
+divergence_list = []
+
 coeff_weights_list = []
 
-
-import numpy as np
+centrailsed_weights = np.load('centrailsed_weights.npz', allow_pickle=True)
 
 def filter_dataset_by_label(x_valid, y_valid, desired_labels):
 
@@ -72,6 +88,8 @@ def init_model():
     print('Sharing Initial Global Model with Random Weight Initialization')
     return jsonify(weights_to_list(global_weights))
 
+
+@tf.function
 @app.route('/update_weights', methods=['POST'])
 def update_weights():
     global current_round, global_weights, accuracy_per_class_over_rounds, precision_per_class_over_rounds, recall_per_class_over_rounds, f1_per_class_over_rounds, round_numbers
@@ -82,13 +100,14 @@ def update_weights():
 
     client_weights = [list_to_weights(w) for w in request.json['weights']]
     client_accuracies.append(request.json['client_accuracy'])
-    
-    if current_round == 1:
-        coefficient_weights = data_distribution.get_initial_coefficient_weights()
-    else:
-        coefficient_weights = get_coefficients(coeff_weights_list, client_accuracies, current_round)
 
-    # coefficient_weights = data_distribution.get_initial_coefficient_weights()
+    if reparam_method == "adaptive":    
+        if current_round == 1:
+            coefficient_weights = data_distribution.get_initial_coefficient_weights()
+        else:
+            coefficient_weights = get_coefficients(coeff_weights_list, client_accuracies, current_round)
+    else:
+        coefficient_weights = data_distribution.get_initial_coefficient_weights()
 
     coeff_weights_list.append(coefficient_weights)
 
@@ -117,6 +136,9 @@ def update_weights():
     with open("underrepresented_client_logs.txt", "a") as file:
         file.write("\n")
     
+    divergence = compute_euclidean_distance(centrailsed_weights, global_weights)
+    divergence_list.append(divergence)
+
     # Evaluate model
     loss, accuracy, accuracy_per_class, precision_per_class, recall_per_class, f1_per_class, confusion_matrix = evaluate_global_model(global_model, global_weights, X_valid, y_valid)
     confusion_matrix_list.append(confusion_matrix)
@@ -168,3 +190,4 @@ if __name__ == "__main__":
     plotter2(cur_dir_path, experiment_name)
     plotter3(cur_dir_path, valid_dist, experiment_name)
     plotter4(cur_dir_path, smallest_k_ids, experiment_name)
+    plotter5(range(1,101), divergence_list)

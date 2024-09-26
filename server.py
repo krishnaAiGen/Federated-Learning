@@ -20,7 +20,7 @@ from src.calculate_divergence import *
 
 reparam_methods = ["fedavg", "static", "adaptive"]
 option = 2
-reparam_method = reparam_methods[option]
+reparam_method = reparam_methods[option-1]
 
 
 app = Flask(__name__)
@@ -52,6 +52,7 @@ client_accuracies = []
 confusion_matrix_list = []
 
 divergence_list = []
+
 
 coeff_weights_list = []
 
@@ -190,4 +191,4 @@ if __name__ == "__main__":
     plotter2(cur_dir_path, experiment_name)
     plotter3(cur_dir_path, valid_dist, experiment_name)
     plotter4(cur_dir_path, smallest_k_ids, experiment_name)
-    plotter5(range(1,101), divergence_list)
+    plotter5(range(1,current_round+1), divergence_list, experiment_name)

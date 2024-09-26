@@ -181,19 +181,23 @@ def plotter4(dir_path, smallest_k_ids, experiment_name):
 
     # plt.show()
 
-def plotter5(list1, list2):
+def plotter5(list1, list2, experiment_name):
 
     # Create a plot
     plt.figure()
     plt.plot(list1, list2, marker='o', linestyle='-', color='b')  # Plot with markers and lines
 
     # Add labels and title
-    plt.xlabel("X-axis Label")
-    plt.ylabel("Y-axis Label")
-    plt.title("X vs Y Plot")
+    plt.xlabel("Rounds")
+    plt.ylabel("Divergence")
+    plt.title("Rounds vs Divergence Plot")
 
-    # Save the plot as an image file
-    plt.savefig("divergence_plot.png", format="png", dpi=300)
+    output_dir = f"{experiment_name}/metrics_plots"
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Save the figure
+    output_path = os.path.join(output_dir, f'divergence_plot.png')
+    plt.savefig(output_path)
 
     # Show the plot
     # plt.show()

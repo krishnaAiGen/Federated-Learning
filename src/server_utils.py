@@ -10,7 +10,8 @@ def initialize_global_model(initialise_new, save):
         if save:
             np.savez('initial_global_weights', *global_weights)
     else:
-        global_weights = np.load('initial_global_weights', allow_pickle=True)
+        loaded_weights = np.load('initial_global_weights.npz', allow_pickle=True)
+        global_weights = [loaded_weights[f'arr_{i}'] for i in range(len(loaded_weights))]
         global_model.set_weights(global_weights)
 
     return global_model, global_weights

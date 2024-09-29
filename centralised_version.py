@@ -4,6 +4,7 @@ import os
 from tqdm import tqdm  # Import tqdm
 from sklearn.metrics import f1_score, precision_score, recall_score, confusion_matrix
 from src.plotting import plotter1, plotter2, plotter3, plotter4
+from src.server_utils import initialize_global_model
 
 accuracy_per_class_over_rounds = []
 precision_per_class_over_rounds = []
@@ -93,9 +94,8 @@ def train_model(dataset_x, dataset_y, rounds, initial_weights):
     return training_accuracy, loss_list
 
 
-global_model = models.get_cicids_model()
-global_weights = global_model.get_weights()
-rounds = 3
+global_model, global_weights = initialize_global_model(initialise_new=True, save=True)
+rounds = 100
 
 # Train the model
 training_accuracy, loss_list = train_model(X_train, y_train, rounds, global_weights)

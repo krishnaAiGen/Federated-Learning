@@ -23,7 +23,7 @@ if __name__ == "__main__":
     epochs = 2
     lr = 0.01
     batch_size = 64
-    rounds = 100
+    rounds = 200
     use_parallel = False
 
     start_time = time.time()

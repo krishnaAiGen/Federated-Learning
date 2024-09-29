@@ -19,7 +19,7 @@ from src.calculate_divergence import *
 
 
 reparam_methods = ["fedavg", "static", "adaptive"]
-option = 2
+option = 3
 reparam_method = reparam_methods[option-1]
 
 
@@ -27,7 +27,7 @@ app = Flask(__name__)
 
 # Initialize global model and data distribution
 print("......Intializing global model")
-global_model, global_weights = initialize_global_model(initialise_new=True, save=True)
+global_model, global_weights = initialize_global_model(initialise_new=False, save=False)
 print("......Loading data distribution")
 
 last_k = 3
@@ -112,7 +112,7 @@ def update_weights():
 
     coeff_weights_list.append(coefficient_weights)
 
-    print(coefficient_weights)
+    # print(coefficient_weights)
 
     with open("server_logs.txt", "a") as file:
         file.write(f"Round: {current_round}\n")
@@ -173,7 +173,7 @@ if __name__ == "__main__":
     print("---")
     app.run(port=5000)
 
-    experiment_name = "adapt sigm"
+    experiment_name = f"{reparam_method} final"
 
     output_dir = f"{experiment_name}/npy results"
     os.makedirs(output_dir, exist_ok=True)
